@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don's List — Nanaimo Rental Housing</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1a1a1a;
+      background: #f5f5f5;
+      line-height: 1.5;
+    }
+
+    /* ---- Header ---- */
+    .header {
+      background: #1b2d45;
+      color: #fff;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      letter-spacing: 0.02em;
+    }
+    .header .subtitle {
+      margin-top: 0.35rem;
+      font-size: 1.05rem;
+      opacity: 0.85;
+    }
+    .header .meta {
+      margin-top: 0.65rem;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+    .header .tribute {
+      margin-top: 0.85rem;
+      font-style: italic;
+      font-size: 0.9rem;
+      opacity: 0.65;
+    }
+
+    /* ---- Controls ---- */
+    .controls {
+      max-width: 1000px;
+      margin: 1.25rem auto 0;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1.1rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #1b2d45;
+      color: #fff;
+      transition: background 0.15s;
+    }
+    .btn:hover { background: #2a4568; }
+    .count { font-size: 0.9rem; color: #555; }
+
+    /* ---- Table ---- */
+    .table-wrap {
+      max-width: 1000px;
+      margin: 0.75rem auto 2rem;
+      padding: 0 1rem;
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    }
+    thead { background: #e9edf2; }
+    th {
+      text-align: left;
+      padding: 0.8rem 1rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #333;
+      border-bottom: 2px solid #ccc;
+      white-space: nowrap;
+    }
+    td {
+      padding: 0.7rem 1rem;
+      font-size: 0.92rem;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+    tbody tr:nth-child(even) { background: #fafafa; }
+    tbody tr:hover { background: #f0f4f8; }
+
+    .contact-col a {
+      color: #1b5fa7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-col a:hover { text-decoration: underline; }
+
+    /* ---- State ---- */
+    .empty {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #888;
+      font-size: 1.1rem;
+    }
+    .error-banner {
+      max-width: 1000px;
+      margin: 1rem auto;
+      padding: 0.75rem 1rem;
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+      border-radius: 6px;
+      color: #856404;
+      font-size: 0.9rem;
+    }
+    .spinner {
+      display: inline-block;
+      width: 1rem; height: 1rem;
+      border: 2px solid #ccc;
+      border-top-color: #1b2d45;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      vertical-align: middle;
+      margin-right: 0.4rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ---- Footer ---- */
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    /* ---- Print ---- */
+    @media print {
+      body { background: #fff; color: #000; }
+      .header { background: #fff; color: #000; padding: 0.5rem 0; border-bottom: 2px solid #000; }
+      .header .meta, .header .tribute, .controls { display: none; }
+      .table-wrap { box-shadow: none; margin-top: 0.5rem; }
+      table { box-shadow: none; border-radius: 0; }
+      thead { background: #ddd; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      th, td { border-color: #999; }
+      .btn { display: none; }
+      .footer { border-top: 1px solid #ccc; }
+      a { color: #000; text-decoration: underline; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Don's List</h1>
+    <p class="subtitle">Private Rental Housing — Nanaimo, British Columbia</p>
+    <p class="meta">Last updated: <span id="updated">loading&hellip;</span></p>
+    <p class="tribute">In memory of Don Fraser, who built this list by hand for the community.</p>
+  </header>
+
+  <div class="controls">
+    <button class="btn" onclick="window.print()">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5V2h8v3M3 11H2V7h12v4h-1"/><rect x="4" y="9" width="8" height="5" rx="1"/></svg>
+      Print List
+    </button>
+    <span class="count" id="count"></span>
+  </div>
+
+  <main class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Address / Location</th>
+          <th>Size / Type</th>
+          <th>Price</th>
+          <th>Contact Info</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <p class="empty" id="empty-msg" hidden>No listings yet. Check back soon.</p>
+  </main>
+
+  <footer class="footer">
+    Updated automatically every Mon, Wed &amp; Fri. &copy; Don's List Community Project.
+  </footer>
+
+  <script>
+    (async () => {
+      const tbody  = document.getElementById("tbody");
+      const empty  = document.getElementById("empty-msg");
+      const count  = document.getElementById("count");
+      const updated = document.getElementById("updated");
+
+      try {
+        const resp = await fetch("listings.json", { cache: "no-cache" });
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        const data = await resp.json();
+
+        const listings = data.listings || [];
+
+        updated.textContent = data.last_updated
+          ? new Date(data.last_updated).toLocaleString("en-CA", { dateStyle: "long", timeStyle: "short", timeZone: "America/Vancouver" })
+          : "unknown";
+
+        if (data.error) {
+          const banner = document.createElement("div");
+          banner.className = "error-banner";
+          banner.textContent = "Note: " + data.error;
+          document.querySelector(".table-wrap").before(banner);
+        }
+
+        if (!listings.length) {
+          empty.hidden = false;
+          count.textContent = "";
+          return;
+        }
+
+        empty.hidden = true;
+        count.textContent = `${listings.length} listing${listings.length !== 1 ? "s" : ""}`;
+
+        for (const l of listings) {
+          const tr = document.createElement("tr");
+          tr.innerHTML = [
+            `<td>${esc(l.address || "Nanaimo")}</td>`,
+            `<td>${esc(l.size || "Unknown")}</td>`,
+            `<td>${esc(l.price || "N/A")}</td>`,
+            `<td class="contact-col">${contactHtml(l)}</td>`,
+          ].join("");
+          tbody.appendChild(tr);
+        }
+      } catch (err) {
+        empty.hidden = false;
+        empty.textContent = "Could not load listings. Check back soon.";
+        updated.textContent = "unavailable";
+        console.error(err);
+      }
+    })();
+
+    function esc(s) {
+      const el = document.createElement("span");
+      el.textContent = s;
+      return el.innerHTML;
+    }
+
+    function contactHtml(l) {
+      if (!l.contact || l.contact === "See listing") {
+        return l.link ? `<a href="${esc(l.link)}" target="_blank" rel="noopener">View listing</a>` : "—";
+      }
+      // If contact looks like a phone number, show it with the link as secondary
+      if (/^\d/.test(l.contact) || l.contact.includes("Reply")) {
+        const phone = esc(l.contact);
+        const link  = l.link ? ` <a href="${esc(l.link)}" target="_blank" rel="noopener">(listing)</a>` : "";
+        return phone + link;
+      }
+      return esc(l.contact);
+    }
+  </script>
+</body>
+</html>
