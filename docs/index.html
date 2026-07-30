@@ -69,6 +69,18 @@
     }
     .btn:hover { background: #2a4568; }
     .count { font-size: 0.9rem; color: #555; }
+    .badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 600;
+      padding: 0.15em 0.55em;
+      border-radius: 3px;
+      letter-spacing: 0.03em;
+      vertical-align: middle;
+      margin-left: 0.35rem;
+    }
+    .badge-cl { background: #e8ecf1; color: #3a5a80; }
+    .badge-kj { background: #fdf0e5; color: #8b5e3c; }
 
     /* ---- Table ---- */
     .table-wrap {
@@ -169,7 +181,7 @@
   <header class="header">
     <h1>Don's List</h1>
     <p class="subtitle">Private Rental Housing — Nanaimo, British Columbia</p>
-    <p class="meta">Last updated: <span id="updated">loading&hellip;</span></p>
+    <p class="meta">Last updated: <span id="updated">loading&hellip;</span> &mdash; Listings under $<span id="max-price">1,500</span></p>
     <p class="tribute">In memory of Don Fraser, who built this list by hand for the community.</p>
   </header>
 
@@ -206,6 +218,7 @@
       const empty  = document.getElementById("empty-msg");
       const count  = document.getElementById("count");
       const updated = document.getElementById("updated");
+      const maxPriceEl = document.getElementById("max-price");
 
       try {
         const resp = await fetch("listings.json", { cache: "no-cache" });
@@ -217,6 +230,10 @@
         updated.textContent = data.last_updated
           ? new Date(data.last_updated).toLocaleString("en-CA", { dateStyle: "long", timeStyle: "short", timeZone: "America/Vancouver" })
           : "unknown";
+
+        if (data.max_price) {
+          maxPriceEl.textContent = data.max_price.toLocaleString();
+        }
 
         if (data.error) {
           const banner = document.createElement("div");
@@ -236,8 +253,9 @@
 
         for (const l of listings) {
           const tr = document.createElement("tr");
+          const srcBadge = l.source ? sourceBadge(l.source) : "";
           tr.innerHTML = [
-            `<td>${esc(l.address || "Nanaimo")}</td>`,
+            `<td>${esc(l.address || "Nanaimo")}${srcBadge}</td>`,
             `<td>${esc(l.size || "Unknown")}</td>`,
             `<td>${esc(l.price || "N/A")}</td>`,
             `<td class="contact-col">${contactHtml(l)}</td>`,
@@ -256,6 +274,12 @@
       const el = document.createElement("span");
       el.textContent = s;
       return el.innerHTML;
+    }
+
+    function sourceBadge(src) {
+      if (/craigslist/i.test(src)) return `<span class="badge badge-cl">CL</span>`;
+      if (/kijiji/i.test(src)) return `<span class="badge badge-kj">KJ</span>`;
+      return "";
     }
 
     function contactHtml(l) {

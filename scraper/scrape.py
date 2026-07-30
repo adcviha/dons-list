@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Don's List — Nanaimo rental scraper.
-Scrapes Craigslist Nanaimo for private rental listings and writes JSON to docs/listings.json.
+Don's List — Nanaimo rental scraper (multi-source).
+Scrapes Craigslist + Kijiji for private rental listings and writes JSON to docs/listings.json.
 """
 
 import json
@@ -16,11 +16,13 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup
 
-BASE_URL = "https://nanaimo.craigslist.org"
-SEARCH_PATH = "/search/apa"
+# ---------------------------------------------------------------------------
+# Configuration
+# ---------------------------------------------------------------------------
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "docs"
 OUTPUT_FILE = OUTPUT_DIR / "listings.json"
-REQUEST_DELAY = 2  # seconds between listing-page fetches
+REQUEST_DELAY = 2  # seconds between deep-scrape page fetches
+MAX_PRICE = 1500   # dollars — listings above this are excluded
 
 HEADERS = {
     "User-Agent": (
@@ -36,7 +38,7 @@ log = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
-# Helpers
+# Shared helpers
 # ---------------------------------------------------------------------------
 
 def fetch_page(url: str) -> BeautifulSoup | None:
@@ -52,14 +54,14 @@ def fetch_page(url: str) -> BeautifulSoup | None:
 def parse_size_type(title: str) -> str:
     t = title.lower()
     for pat, fmt in [
-        (r"\b(\d+)\s*b(?:e)?d(?:r)?(?:oo)?m\b",  lambda m: f"{m[1]} Bedroom"),
-        (r"\b(\d+)\s*br\b",                       lambda m: f"{m[1]} Bedroom"),
-        (r"\b(\d+)\s*bdrm\b",                     lambda m: f"{m[1]} Bedroom"),
-        (r"\b(\d+)\s*bed\b",                      lambda m: f"{m[1]} Bedroom"),
-        (r"\bbachelor\b",                         lambda _: "Bachelor"),
-        (r"\bstudio\b",                           lambda _: "Studio"),
-        (r"\bshared\b",                           lambda _: "Shared"),
-        (r"\b(\d+)\s*bedroom\b",                  lambda m: f"{m[1]} Bedroom"),
+        (r"\b(\d+)\s*b(?:e)?d(?:r)?(?:oo)?m\b", lambda m: f"{m[1]} Bedroom"),
+        (r"\b(\d+)\s*br\b",                      lambda m: f"{m[1]} Bedroom"),
+        (r"\b(\d+)\s*bdrm\b",                    lambda m: f"{m[1]} Bedroom"),
+        (r"\b(\d+)\s*bed\b",                     lambda m: f"{m[1]} Bedroom"),
+        (r"\b(\d+)\s*bedroom\b",                 lambda m: f"{m[1]} Bedroom"),
+        (r"\bbachelor\b",                        lambda _: "Bachelor"),
+        (r"\bstudio\b",                          lambda _: "Studio"),
+        (r"\bshared\b",                          lambda _: "Shared"),
     ]:
         m = re.search(pat, t)
         if m:
@@ -68,54 +70,99 @@ def parse_size_type(title: str) -> str:
 
 
 def clean_price(raw: str) -> str:
-    """Normalise price strings like '$1,700 / 1br' -> '$1,700'."""
-    raw = raw.strip()
+    """Normalise a price string like '$1,700 / 1br' → '$1,700'."""
+    raw = raw.strip().replace(" ", " ")
     m = re.match(r"\$[\d,]+(?:\.\d{2})?", raw)
     return m[0] if m else raw
 
 
+def parse_price_value(raw: str) -> float | None:
+    """Parse a price string into a numeric dollar amount.  Returns None if unparseable."""
+    m = re.search(r"\$?\s*([\d,]+(?:\.\d{2})?)", str(raw).replace(",", ""))
+    if not m:
+        return None
+    try:
+        return float(m[1])
+    except ValueError:
+        return None
+
+
+def price_ok(raw: str, limit: int = MAX_PRICE) -> bool:
+    """Return True if the listing price is at-or-below *limit*, or unparseable (keep unknown)."""
+    v = parse_price_value(raw)
+    if v is None:
+        return True   # keep listings whose price we couldn't parse
+    return v <= limit
+
+
+def extract_phone(text: str) -> str | None:
+    m = re.search(r"\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}", text)
+    return m.group(0) if m else None
+
+
+def make_abs(url: str, base: str) -> str:
+    if not url:
+        return ""
+    return url if url.startswith("http") else urljoin(base, url)
+
+
 # ---------------------------------------------------------------------------
-# Search-results parsing
+# Craigslist
 # ---------------------------------------------------------------------------
 
-def parse_search_results(soup: BeautifulSoup) -> list[dict]:
-    listings: list[dict] = []
+CL_BASE = "https://nanaimo.craigslist.org"
+CL_SEARCH = CL_BASE + "/search/apa"
 
-    # Try several known Craigslist result-item selectors (newest first)
-    selectors = [
-        "li.cl-static-search-result",
-        "li.result-row",
-        "li[data-pid]",
-        "div.result-info",
-    ]
 
+def scrape_craigslist() -> list[dict]:
+    log.info("--- Craigslist ---")
+    soup = fetch_page(CL_SEARCH)
+    if not soup:
+        return []
+
+    # Try several known Craigslist result-item selectors
     items: list = []
-    for sel in selectors:
+    for sel in ["li.cl-static-search-result", "li.result-row", "li[data-pid]", "div.result-info"]:
         items = soup.select(sel)
         if items:
-            log.info("Matched %d results using selector '%s'", len(items), sel)
+            log.info("Matched %d results using '%s'", len(items), sel)
             break
 
     if not items:
-        # Last resort — find any <a> that looks like a listing link
-        log.warning("No known result selectors matched; falling back to link scanning")
-        for a in soup.find_all("a", href=True):
-            href = a["href"]
-            if "/apa/" in href or "/d/" in href:
-                listings.append(_listing_from_link(a))
-        return listings
+        log.warning("No known Craigslist selectors matched; scanning links")
+        items = [a for a in soup.find_all("a", href=True) if "/apa/" in a["href"] or "/d/" in a["href"]]
+        raw = [_cl_from_link(a) for a in items]
+    else:
+        raw = [r for item in items if (r := _cl_parse_item(item))]
 
-    for item in items:
-        listing = _parse_result_item(item)
-        if listing:
-            listings.append(listing)
+    log.info("Craigslist raw: %d listings", len(raw))
 
-    return listings
+    # Deep-scrape each for address + contact
+    for i, listing in enumerate(raw):
+        if not listing["link"]:
+            continue
+        log.info("[CL %d/%d] %s", i + 1, len(raw), listing["title"][:60])
+        time.sleep(REQUEST_DELAY)
+        details = _cl_fetch_details(listing["link"])
+        if details.get("address"):
+            listing["address"] = details["address"]
+        if details.get("contact") and details["contact"] != "See listing":
+            listing["contact"] = details["contact"]
+
+    # Deduplicate by link
+    seen = set()
+    deduped = []
+    for l in raw:
+        if l["link"] and l["link"] not in seen:
+            seen.add(l["link"])
+            deduped.append(l)
+        elif not l["link"]:
+            deduped.append(l)
+    log.info("Craigslist after dedup: %d", len(deduped))
+    return deduped
 
 
-def _parse_result_item(item) -> dict | None:
-    """Parse a single Craigslist result item."""
-    # Title + link
+def _cl_parse_item(item) -> dict | None:
     title_el = item.find("div", class_="title") or item.find("a", class_="result-title")
     if not title_el:
         a = item.find("a", href=True)
@@ -131,11 +178,8 @@ def _parse_result_item(item) -> dict | None:
         a = item.find("a", href=True)
         if a:
             link = a["href"]
+    link = make_abs(link, CL_BASE)
 
-    if link and not link.startswith("http"):
-        link = urljoin(BASE_URL, link)
-
-    # Price
     price_el = (
         item.find("span", class_="priceinfo")
         or item.find("span", class_="result-price")
@@ -143,14 +187,12 @@ def _parse_result_item(item) -> dict | None:
     )
     price = clean_price(price_el.get_text(strip=True)) if price_el else "N/A"
 
-    # Location
     loc_el = (
         item.find("div", class_="location")
         or item.find("span", class_="result-hood")
         or item.find("span", class_="nearby")
     )
     location = loc_el.get_text(strip=True) if loc_el else "Nanaimo"
-    # Strip parentheses that Craigslist sometimes wraps around hoods
     location = location.strip("() ")
 
     return {
@@ -160,14 +202,13 @@ def _parse_result_item(item) -> dict | None:
         "contact": "See listing",
         "link": link,
         "title": title,
+        "source": "Craigslist",
     }
 
 
-def _listing_from_link(a) -> dict | None:
+def _cl_from_link(a) -> dict | None:
     title = a.get_text(strip=True)
-    link = a["href"]
-    if not link.startswith("http"):
-        link = urljoin(BASE_URL, link)
+    link = make_abs(a.get("href", ""), CL_BASE)
     if not title:
         return None
     return {
@@ -177,56 +218,191 @@ def _listing_from_link(a) -> dict | None:
         "contact": "See listing",
         "link": link,
         "title": title,
+        "source": "Craigslist",
     }
 
 
-# ---------------------------------------------------------------------------
-# Individual listing pages (deep scrape)
-# ---------------------------------------------------------------------------
-
-def fetch_listing_details(url: str) -> dict:
-    """Visit a single listing page and pull out address + contact info."""
+def _cl_fetch_details(url: str) -> dict:
     details: dict = {"address": "", "contact": ""}
-
     soup = fetch_page(url)
     if not soup:
         return details
 
-    # --- Address ---
-    # Map address block
+    # Address — map block
     map_addr = soup.find("div", class_="mapaddress")
     if map_addr:
         details["address"] = map_addr.get_text(strip=True)
 
-    # Sometimes address is in postinginfo div
+    # Address — attrgroup spans
     if not details["address"]:
-        for attr_group in soup.select(".attrgroup span"):
-            txt = attr_group.get_text(strip=True)
-            # Heuristic: a string with a digit + street-type word
+        for sp in soup.select(".attrgroup span"):
+            txt = sp.get_text(strip=True)
             if re.search(r"\d+\s+\w+\s+(St|Ave|Rd|Dr|Cres|Ct|Pl|Blvd|Way|Ln|Hwy)", txt):
                 details["address"] = txt
                 break
 
-    # --- Contact ---
+    # Contact — phone in body
     body = soup.find("section", id="postingbody")
     body_text = body.get_text() if body else ""
-
-    # Phone number in body
-    phone_m = re.search(r"\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}", body_text)
-    if phone_m:
-        details["contact"] = phone_m.group(0)
-
-    # Craigslist reply email relay
-    if not details["contact"]:
-        reply_btn = soup.find("button", class_="reply-button")
-        if reply_btn:
+    phone = extract_phone(body_text)
+    if phone:
+        details["contact"] = phone
+    else:
+        # Craigslist relay
+        if soup.find("button", class_="reply-button") or soup.find("a", href=re.compile(r"mailto:|/reply/")):
             details["contact"] = "Reply via Craigslist"
-        else:
-            reply_link = soup.find("a", href=re.compile(r"mailto:|/reply/"))
-            if reply_link:
-                details["contact"] = "Reply via Craigslist"
+    return details
 
-    # Fallback
+
+# ---------------------------------------------------------------------------
+# Kijiji
+# ---------------------------------------------------------------------------
+
+KIJIJI_BASE = "https://www.kijiji.ca"
+KIJIJI_SEARCH = KIJIJI_BASE + "/b-apartments-condos/nanaimo/c37l1700167"
+
+
+def scrape_kijiji() -> list[dict]:
+    log.info("--- Kijiji ---")
+    soup = fetch_page(KIJIJI_SEARCH)
+    if not soup:
+        return []
+
+    listings: list[dict] = []
+
+    # Kijiji renders listing cards server-side.  Try several known containers.
+    for sel in [
+        "div[data-testid='listing-card']",
+        "div.search-item",
+        "div.regular-ad",
+        "section[data-testid='listing-card']",
+    ]:
+        cards = soup.select(sel)
+        if cards:
+            log.info("Matched %d Kijiji cards using '%s'", len(cards), sel)
+            for card in cards:
+                listing = _kj_parse_card(card)
+                if listing:
+                    listings.append(listing)
+            break
+
+    if not listings:
+        # Broad fallback: look for <a> links that go to /v-* (Kijiji listing URLs)
+        log.warning("No Kijiji card selectors matched; scanning for listing links")
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            if re.search(r"/v-(apartments-condos|rental)/", href):
+                title = a.get_text(strip=True)
+                if title:
+                    listings.append({
+                        "address": "Nanaimo",
+                        "size": parse_size_type(title),
+                        "price": "N/A",
+                        "contact": "See listing",
+                        "link": make_abs(href, KIJIJI_BASE),
+                        "title": title,
+                        "source": "Kijiji",
+                    })
+
+    log.info("Kijiji raw: %d listings", len(listings))
+
+    # Deep-scrape
+    for i, listing in enumerate(listings):
+        if not listing["link"]:
+            continue
+        log.info("[KJ %d/%d] %s", i + 1, len(listings), listing["title"][:60])
+        time.sleep(REQUEST_DELAY)
+        details = _kj_fetch_details(listing["link"])
+        if details.get("address"):
+            listing["address"] = details["address"]
+        if details.get("contact") and details["contact"] != "See listing":
+            listing["contact"] = details["contact"]
+
+    # Dedup by link
+    seen = set()
+    deduped = []
+    for l in listings:
+        if l["link"] and l["link"] not in seen:
+            seen.add(l["link"])
+            deduped.append(l)
+        elif not l["link"]:
+            deduped.append(l)
+    log.info("Kijiji after dedup: %d", len(deduped))
+    return deduped
+
+
+def _kj_parse_card(card) -> dict | None:
+    # Title
+    title_el = (
+        card.find("a", attrs={"data-testid": "listing-link"})
+        or card.find("a", class_="title")
+        or card.find("a", href=re.compile(r"/v-"))
+    )
+    if not title_el:
+        return None
+    title = title_el.get_text(strip=True)
+    link = make_abs(title_el.get("href", ""), KIJIJI_BASE)
+
+    # Price
+    price_el = (
+        card.find(attrs={"data-testid": "listing-price"})
+        or card.find("div", class_="price")
+        or card.find("span", class_="price")
+    )
+    price = clean_price(price_el.get_text(strip=True)) if price_el else "N/A"
+
+    # Location
+    loc_el = (
+        card.find(attrs={"data-testid": "listing-location"})
+        or card.find("div", class_="location")
+        or card.find("span", class_="address")
+    )
+    location = loc_el.get_text(strip=True) if loc_el else "Nanaimo"
+
+    return {
+        "address": location,
+        "size": parse_size_type(title),
+        "price": price,
+        "contact": "See listing",
+        "link": link,
+        "title": title,
+        "source": "Kijiji",
+    }
+
+
+def _kj_fetch_details(url: str) -> dict:
+    details: dict = {"address": "", "contact": ""}
+    soup = fetch_page(url)
+    if not soup:
+        return details
+
+    # Address — Kijiji shows it near the map
+    addr_el = (
+        soup.find(attrs={"data-testid": "listing-address"})
+        or soup.find("span", itemprop="address")
+        or soup.find("div", class_="addressContainer-")
+    )
+    if addr_el:
+        details["address"] = addr_el.get_text(strip=True)
+
+    # Contact — phone in description body
+    body_el = (
+        soup.find("div", itemprop="description")
+        or soup.find("div", class_="descriptionContainer-")
+        or soup.find("div", id="MainContainer")
+    )
+    if body_el:
+        phone = extract_phone(body_el.get_text())
+        if phone:
+            details["contact"] = phone
+
+    # Contact — Kijiji "show phone" button means there's a phone
+    if not details["contact"]:
+        if soup.find("button", attrs={"data-testid": "show-phone"}):
+            details["contact"] = "Phone available on listing"
+        elif soup.find("button", string=re.compile(r"show|reveal|contact", re.I)):
+            details["contact"] = "Contact via Kijiji"
+
     if not details["contact"]:
         details["contact"] = "See listing"
 
@@ -238,48 +414,49 @@ def fetch_listing_details(url: str) -> dict:
 # ---------------------------------------------------------------------------
 
 def scrape() -> dict:
-    log.info("=== Don's List scraper starting ===")
+    log.info("=" * 55)
+    log.info("Don's List — Nanaimo Rental Scraper")
+    log.info("Price cutoff: ≤ $%d", MAX_PRICE)
+    log.info("=" * 55)
 
-    search_url = f"{BASE_URL}{SEARCH_PATH}"
-    log.info("Fetching search results: %s", search_url)
+    errors: list[str] = []
+    all_listings: list[dict] = []
 
-    soup = fetch_page(search_url)
-    if not soup:
-        return {
-            "last_updated": datetime.now(timezone.utc).isoformat(),
-            "listings": [],
-            "error": "Failed to fetch Craigslist search page",
-        }
+    # Craigslist
+    try:
+        all_listings.extend(scrape_craigslist())
+    except Exception as exc:
+        msg = f"Craigslist failed: {exc}"
+        log.exception(msg)
+        errors.append(msg)
 
-    listings = parse_search_results(soup)
-    log.info("Found %d raw listings", len(listings))
+    # Kijiji
+    try:
+        all_listings.extend(scrape_kijiji())
+    except Exception as exc:
+        msg = f"Kijiji failed: {exc}"
+        log.exception(msg)
+        errors.append(msg)
 
-    # Deep-scrape each listing for address & contact
-    for i, listing in enumerate(listings):
-        if not listing["link"]:
-            continue
-        log.info("[%d/%d] %s", i + 1, len(listings), listing["title"][:60])
-        time.sleep(REQUEST_DELAY)
-        details = fetch_listing_details(listing["link"])
-        if details.get("address"):
-            listing["address"] = details["address"]
-        if details.get("contact"):
-            listing["contact"] = details["contact"]
+    # Price filter
+    before = len(all_listings)
+    filtered = [l for l in all_listings if price_ok(l["price"])]
+    log.info("Price filter: %d → %d (kept ≤ $%d + unparseable)", before, len(filtered), MAX_PRICE)
 
-    # Deduplicate by link
-    seen = set()
-    deduped: list[dict] = []
-    for l in listings:
-        if l["link"] and l["link"] not in seen:
-            seen.add(l["link"])
-            deduped.append(l)
-        elif not l["link"]:
-            deduped.append(l)
+    # Sort by price (ascending, unknown at bottom)
+    def _sort_key(l: dict):
+        v = parse_price_value(l["price"])
+        return (v is None, v or 0)
+    filtered.sort(key=_sort_key)
 
-    log.info("Final count after dedup: %d", len(deduped))
+    error_msg = "; ".join(errors) if errors else ""
+    log.info("Final: %d listings  errors: %s", len(filtered), error_msg or "none")
+
     return {
         "last_updated": datetime.now(timezone.utc).isoformat(),
-        "listings": deduped,
+        "listings": filtered,
+        "error": error_msg,
+        "max_price": MAX_PRICE,
     }
 
 
@@ -292,8 +469,7 @@ def main() -> None:
 
     log.info("Wrote %d listings to %s", len(data["listings"]), OUTPUT_FILE)
 
-    if not data["listings"] and "error" not in data:
-        log.warning("Zero listings — Craigslist HTML may have changed.")
+    if not data["listings"] and data["error"]:
         sys.exit(1)
 
 
