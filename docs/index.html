@@ -114,20 +114,6 @@
     tbody tr:hover { background: #f3f1ea; }
     td:first-child { font-weight: 600; }
 
-    .badge {
-      display: inline-block;
-      font-size: 0.58rem;
-      font-weight: 700;
-      padding: 0.1em 0.45em;
-      border-radius: 2px;
-      letter-spacing: 0.04em;
-      vertical-align: middle;
-      margin-left: 0.3rem;
-      font-family: system-ui, -apple-system, sans-serif;
-    }
-    .badge-cl { background: #e8ecf1; color: #4a6a8a; }
-    .badge-kj { background: #fdf0e5; color: #8b5e3c; }
-
     .contact-col a {
       color: #556b2f;
       text-decoration: none;
@@ -259,9 +245,8 @@
 
         for (const l of listings) {
           const tr = document.createElement("tr");
-          const srcBadge = l.source ? sourceBadge(l.source) : "";
           tr.innerHTML = [
-            `<td>${esc(l.address || "Nanaimo")}${srcBadge}</td>`,
+            `<td>${esc(l.address || "Nanaimo")}</td>`,
             `<td>${esc(l.size || "Unknown")}</td>`,
             `<td>${esc(l.price || "N/A")}</td>`,
             `<td class="contact-col">${contactHtml(l)}</td>`,
@@ -280,12 +265,6 @@
       const el = document.createElement("span");
       el.textContent = s;
       return el.innerHTML;
-    }
-
-    function sourceBadge(src) {
-      if (/craigslist/i.test(src)) return `<span class="badge badge-cl">CL</span>`;
-      if (/kijiji/i.test(src)) return `<span class="badge badge-kj">KJ</span>`;
-      return "";
     }
 
     function contactHtml(l) {

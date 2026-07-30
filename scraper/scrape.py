@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Don's List — Nanaimo rental scraper (multi-source).
-Scrapes Craigslist + Kijiji for private rental listings and writes JSON to docs/listings.json.
+Don's List — Nanaimo rental scraper.
+Scrapes Craigslist Nanaimo for long-term private rental listings ≤ $1500
+and writes JSON to docs/listings.json.
 """
 
 import json
@@ -9,6 +10,7 @@ import logging
 import re
 import sys
 import time
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin
@@ -21,8 +23,8 @@ from bs4 import BeautifulSoup
 # ---------------------------------------------------------------------------
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "docs"
 OUTPUT_FILE = OUTPUT_DIR / "listings.json"
-REQUEST_DELAY = 2  # seconds between deep-scrape page fetches
-MAX_PRICE = 1500   # dollars — listings above this are excluded
+REQUEST_DELAY = 2   # seconds between deep-scrape fetches
+MAX_PRICE = 1500     # dollars
 
 HEADERS = {
     "User-Agent": (
@@ -32,6 +34,17 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-CA,en;q=0.9",
 }
+
+# Keywords that indicate a short-term / vacation / temporary rental.
+# We check both the title and the listing body.
+SHORT_TERM_PATTERNS = [
+    r"\bshort[ -]?term\b", r"\btemporary\b", r"\btemp housing\b",
+    r"\bvacation\b", r"\bholiday\b", r"\bnightly\b", r"\bper night\b",
+    r"\bper week\b", r"\bweekly rate\b", r"\bairbnb\b", r"\bvrbo\b",
+    r"\bmid[ -]?term\b", r"\bexecutive rental\b", r"\bcorporate rental\b",
+    r"\btravel nurse\b", r"\bseasonal\b", r"\bski season\b",
+    r"\bwinter rental\b", r"\bsummer rental\b", r"\bsummer sublet\b",
+]
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)
@@ -51,33 +64,43 @@ def fetch_page(url: str) -> BeautifulSoup | None:
         return None
 
 
-def parse_size_type(title: str) -> str:
-    t = title.lower()
+def parse_size_type(title: str, body_text: str = "", attrs: list[str] | None = None) -> str:
+    """Extract unit size/type from title, body text, and attribute spans."""
+    sources = [title.lower()]
+    if body_text:
+        # Use first 500 chars of body — the key details are usually near the top
+        sources.append(body_text[:500].lower())
+    if attrs:
+        sources.append(" ".join(attrs).lower())
+
+    combined = " ".join(sources)
+
+    # Ordered most-specific first
     for pat, fmt in [
         (r"\b(\d+)\s*b(?:e)?d(?:r)?(?:oo)?m\b", lambda m: f"{m[1]} Bedroom"),
         (r"\b(\d+)\s*br\b",                      lambda m: f"{m[1]} Bedroom"),
         (r"\b(\d+)\s*bdrm\b",                    lambda m: f"{m[1]} Bedroom"),
-        (r"\b(\d+)\s*bed\b",                     lambda m: f"{m[1]} Bedroom"),
         (r"\b(\d+)\s*bedroom\b",                 lambda m: f"{m[1]} Bedroom"),
+        (r"\b(\d+)\s*bed\b",                     lambda m: f"{m[1]} Bedroom"),
         (r"\bbachelor\b",                        lambda _: "Bachelor"),
         (r"\bstudio\b",                          lambda _: "Studio"),
         (r"\bshared\b",                          lambda _: "Shared"),
+        (r"\broommate\b",                        lambda _: "Shared"),
+        (r"\b(\d+)\s*rooms?\b",                  lambda m: f"{m[1]} Bedroom"),
     ]:
-        m = re.search(pat, t)
+        m = re.search(pat, combined)
         if m:
             return fmt(m)
     return "Unknown"
 
 
 def clean_price(raw: str) -> str:
-    """Normalise a price string like '$1,700 / 1br' → '$1,700'."""
-    raw = raw.strip().replace(" ", " ")
+    raw = raw.strip().replace("\xa0", " ").replace(" ", " ")
     m = re.match(r"\$[\d,]+(?:\.\d{2})?", raw)
     return m[0] if m else raw
 
 
 def parse_price_value(raw: str) -> float | None:
-    """Parse a price string into a numeric dollar amount.  Returns None if unparseable."""
     m = re.search(r"\$?\s*([\d,]+(?:\.\d{2})?)", str(raw).replace(",", ""))
     if not m:
         return None
@@ -88,11 +111,8 @@ def parse_price_value(raw: str) -> float | None:
 
 
 def price_ok(raw: str, limit: int = MAX_PRICE) -> bool:
-    """Return True if the listing price is at-or-below *limit*, or unparseable (keep unknown)."""
     v = parse_price_value(raw)
-    if v is None:
-        return True   # keep listings whose price we couldn't parse
-    return v <= limit
+    return v is None or v <= limit
 
 
 def extract_phone(text: str) -> str | None:
@@ -104,6 +124,68 @@ def make_abs(url: str, base: str) -> str:
     if not url:
         return ""
     return url if url.startswith("http") else urljoin(base, url)
+
+
+def is_short_term(title: str, body_text: str) -> bool:
+    """Return True if the listing appears to be short-term / vacation / temporary."""
+    combined = f"{title} {body_text[:800]}".lower()
+    for pat in SHORT_TERM_PATTERNS:
+        if re.search(pat, combined):
+            return True
+    return False
+
+
+def _norm_title(title: str) -> str:
+    """Normalise a title for dedup comparison."""
+    t = title.lower()
+    t = re.sub(r"[^a-z0-9\s]", " ", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    # Remove common filler words
+    for w in ["available", "now", "apply", "today", "beautiful", "great", "nice", "stunning", "lovely"]:
+        t = t.replace(f" {w} ", " ")
+    return t
+
+
+def deduplicate_listings(listings: list[dict]) -> list[dict]:
+    """Remove near-duplicate listings (same unit reposted under different URLs)."""
+    if len(listings) <= 1:
+        return listings
+
+    # Group by normalised title word overlap
+    kept: list[dict] = []
+    kept_titles: list[set[str]] = []
+
+    for listing in listings:
+        words = set(_norm_title(listing["title"]).split())
+        if len(words) < 3:
+            kept.append(listing)
+            kept_titles.append(words)
+            continue
+
+        is_dup = False
+        for i, existing in enumerate(kept_titles):
+            if len(existing) < 3:
+                continue
+            common = words & existing
+            overlap = len(common) / max(len(words), len(existing))
+            if overlap > 0.75:
+                is_dup = True
+                # Keep the one with the lower price (if parseable)
+                new_p = parse_price_value(listing["price"])
+                old_p = parse_price_value(kept[i]["price"])
+                if new_p is not None and (old_p is None or new_p < old_p):
+                    kept[i] = listing
+                    kept_titles[i] = words
+                break
+
+        if not is_dup:
+            kept.append(listing)
+            kept_titles.append(words)
+
+    removed = len(listings) - len(kept)
+    if removed:
+        log.info("Title dedup removed %d near-duplicates", removed)
+    return kept
 
 
 # ---------------------------------------------------------------------------
@@ -120,7 +202,6 @@ def scrape_craigslist() -> list[dict]:
     if not soup:
         return []
 
-    # Try several known Craigslist result-item selectors
     items: list = []
     for sel in ["li.cl-static-search-result", "li.result-row", "li[data-pid]", "div.result-info"]:
         items = soup.select(sel)
@@ -131,25 +212,40 @@ def scrape_craigslist() -> list[dict]:
     if not items:
         log.warning("No known Craigslist selectors matched; scanning links")
         items = [a for a in soup.find_all("a", href=True) if "/apa/" in a["href"] or "/d/" in a["href"]]
-        raw = [_cl_from_link(a) for a in items]
+        raw = [r for a in items if (r := _cl_from_link(a))]
     else:
         raw = [r for item in items if (r := _cl_parse_item(item))]
 
     log.info("Craigslist raw: %d listings", len(raw))
 
-    # Deep-scrape each for address + contact
+    # Deep-scrape each for address, body text, contact, and short-term check
     for i, listing in enumerate(raw):
         if not listing["link"]:
             continue
-        log.info("[CL %d/%d] %s", i + 1, len(raw), listing["title"][:60])
+        log.info("[%d/%d] %s", i + 1, len(raw), listing["title"][:70])
         time.sleep(REQUEST_DELAY)
         details = _cl_fetch_details(listing["link"])
+
+        # Apply short-term filter during deep-scrape (saves processing)
+        if details.get("short_term"):
+            listing["_skip"] = True
+            listing["_skip_reason"] = "short-term"
+            continue
+
         if details.get("address"):
             listing["address"] = details["address"]
         if details.get("contact") and details["contact"] != "See listing":
             listing["contact"] = details["contact"]
+        if details.get("body_text"):
+            # Re-parse type with body text + attrs for better accuracy
+            better_type = parse_size_type(listing["title"], details["body_text"], details.get("attrs"))
+            if better_type != "Unknown" or listing["size"] == "Unknown":
+                listing["size"] = better_type
 
-    # Deduplicate by link
+    # Remove short-term listings
+    raw = [l for l in raw if not l.pop("_skip", False)]
+
+    # Deduplicate by URL first, then by title similarity
     seen = set()
     deduped = []
     for l in raw:
@@ -158,7 +254,9 @@ def scrape_craigslist() -> list[dict]:
             deduped.append(l)
         elif not l["link"]:
             deduped.append(l)
-    log.info("Craigslist after dedup: %d", len(deduped))
+
+    deduped = deduplicate_listings(deduped)
+    log.info("Craigslist final: %d", len(deduped))
     return deduped
 
 
@@ -202,7 +300,6 @@ def _cl_parse_item(item) -> dict | None:
         "contact": "See listing",
         "link": link,
         "title": title,
-        "source": "Craigslist",
     }
 
 
@@ -218,55 +315,55 @@ def _cl_from_link(a) -> dict | None:
         "contact": "See listing",
         "link": link,
         "title": title,
-        "source": "Craigslist",
     }
 
 
 def _cl_fetch_details(url: str) -> dict:
-    details: dict = {"address": "", "contact": ""}
+    """Visit a single Craigslist listing page. Returns address, contact, body text,
+    attribute spans, and whether it's short-term."""
+    details: dict = {"address": "", "contact": "", "body_text": "", "attrs": [], "short_term": False}
     soup = fetch_page(url)
     if not soup:
         return details
 
-    # Address — map block
+    # --- Body text ---
+    body = soup.find("section", id="postingbody")
+    body_text = body.get_text(" ", strip=True) if body else ""
+    details["body_text"] = body_text
+
+    # --- Attribute spans (BR, sqft, etc.) ---
+    attr_spans = [sp.get_text(strip=True) for sp in soup.select(".attrgroup span")]
+    details["attrs"] = attr_spans
+
+    # --- Short-term check ---
+    # Find the title on the listing page
+    title_el = soup.find("span", class_="postingtitletext") or soup.find("h1")
+    page_title = title_el.get_text(strip=True) if title_el else ""
+    if is_short_term(page_title, body_text):
+        details["short_term"] = True
+        return details  # don't bother with the rest
+
+    # --- Address ---
     map_addr = soup.find("div", class_="mapaddress")
     if map_addr:
         details["address"] = map_addr.get_text(strip=True)
-
-    # Address — attrgroup spans
     if not details["address"]:
-        for sp in soup.select(".attrgroup span"):
-            txt = sp.get_text(strip=True)
-            if re.search(r"\d+\s+\w+\s+(St|Ave|Rd|Dr|Cres|Ct|Pl|Blvd|Way|Ln|Hwy)", txt):
-                details["address"] = txt
+        for sp in attr_spans:
+            if re.search(r"\d+\s+\w+\s+(St|Ave|Rd|Dr|Cres|Ct|Pl|Blvd|Way|Ln|Hwy|Street|Avenue|Road|Drive|Crescent|Court|Place|Lane|Highway)", sp):
+                details["address"] = sp
                 break
 
-    # Contact — phone in body
-    body = soup.find("section", id="postingbody")
-    body_text = body.get_text() if body else ""
+    # --- Contact ---
+    # Phone number in body
     phone = extract_phone(body_text)
     if phone:
         details["contact"] = phone
     else:
-        # Craigslist relay
-        if soup.find("button", class_="reply-button") or soup.find("a", href=re.compile(r"mailto:|/reply/")):
+        # Craigslist relay email — indicated by reply button
+        if soup.find("button", class_="reply-button") or soup.find("a", href=re.compile(r"/reply/")):
             details["contact"] = "Reply via Craigslist"
+
     return details
-
-
-# ---------------------------------------------------------------------------
-# Kijiji (skipped — JS-rendered, see function docstring)
-# ---------------------------------------------------------------------------
-
-
-def scrape_kijiji() -> list[dict]:
-    """Kijiji is fully client-side rendered (Next.js + Apollo GraphQL).
-    Listings load via JavaScript API calls after page load — not present
-    in the initial HTML.  BeautifulSoup cannot execute JS, so we skip it
-    rather than burning time on a guaranteed empty parse."""
-    log.info("--- Kijiji ---")
-    log.warning("Kijiji is JS-rendered — skipping (requires Playwright/Selenium, too heavy for free CI)")
-    return []
 
 
 # ---------------------------------------------------------------------------
@@ -276,13 +373,12 @@ def scrape_kijiji() -> list[dict]:
 def scrape() -> dict:
     log.info("=" * 55)
     log.info("Don's List — Nanaimo Rental Scraper")
-    log.info("Price cutoff: ≤ $%d", MAX_PRICE)
+    log.info("Price cutoff: ≤ $%d  |  Long-term only", MAX_PRICE)
     log.info("=" * 55)
 
     errors: list[str] = []
     all_listings: list[dict] = []
 
-    # Craigslist
     try:
         all_listings.extend(scrape_craigslist())
     except Exception as exc:
@@ -290,27 +386,23 @@ def scrape() -> dict:
         log.exception(msg)
         errors.append(msg)
 
-    # Kijiji
-    try:
-        all_listings.extend(scrape_kijiji())
-    except Exception as exc:
-        msg = f"Kijiji failed: {exc}"
-        log.exception(msg)
-        errors.append(msg)
-
     # Price filter
     before = len(all_listings)
     filtered = [l for l in all_listings if price_ok(l["price"])]
-    log.info("Price filter: %d → %d (kept ≤ $%d + unparseable)", before, len(filtered), MAX_PRICE)
+    log.info("Price filter: %d → %d (≤ $%d + unparseable)", before, len(filtered), MAX_PRICE)
 
-    # Sort by price (ascending, unknown at bottom)
+    # Sort by price ascending, unknown at bottom
     def _sort_key(l: dict):
         v = parse_price_value(l["price"])
         return (v is None, v or 0)
     filtered.sort(key=_sort_key)
 
+    # Remove internal fields before output
+    for l in filtered:
+        l.pop("title", None)
+
     error_msg = "; ".join(errors) if errors else ""
-    log.info("Final: %d listings  errors: %s", len(filtered), error_msg or "none")
+    log.info("Final: %d long-term listings ≤ $%d  errors: %s", len(filtered), MAX_PRICE, error_msg or "none")
 
     return {
         "last_updated": datetime.now(timezone.utc).isoformat(),
@@ -328,7 +420,6 @@ def main() -> None:
         json.dump(data, fh, indent=2, ensure_ascii=False)
 
     log.info("Wrote %d listings to %s", len(data["listings"]), OUTPUT_FILE)
-
     if not data["listings"] and data["error"]:
         sys.exit(1)
 
