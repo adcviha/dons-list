@@ -1,5 +1,295 @@
 {
-  "last_updated": "",
-  "listings": [],
+  "last_updated": "2026-07-30T17:57:05.758759+00:00",
+  "listings": [
+    {
+      "address": "Cedar Ridge Place",
+      "size": "Unknown",
+      "price": "$600",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-short-to-mid-term-furnished-top/kdCGTchZuUAo2AhShQq52C",
+      "title": "Short to mid-term furnished top floor condo on Long Lake",
+      "source": "Craigslist"
+    },
+    {
+      "address": "285 Rosehill Street",
+      "size": "Unknown",
+      "price": "$870",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-ft2-apartments-for-rent/37RJhjUkbRn8AidCkpgyQe",
+      "title": "$870// 325ft2 - Apartments for Rent (Nanaimo)",
+      "source": "Craigslist"
+    },
+    {
+      "address": "1000 near Trunk road",
+      "size": "Unknown",
+      "price": "$900",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-rooms-available-in-duncan/vs3Re5R1jZEXbsoR7kKpNN",
+      "title": "Rooms available in Duncan",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Nanaimo South",
+      "size": "Unknown",
+      "price": "$950",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-condonium-apartment-for/otkvTphPnafr3EJHdKWE4p",
+      "title": "A condonium apartment for rent",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Nanaimo",
+      "size": "1 Bedroom",
+      "price": "$1,000",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-bedroom-bath-studio-suite/jyb1hSUMbG2ANXvtsixfQd",
+      "title": "1 bedroom 1 bath Studio suite",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Nanaimo",
+      "size": "Bachelor",
+      "price": "$1,000",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bachelor-suite-for/dAHA7XqSw6MzUSJr7R5chK",
+      "title": "Bachelor Suite for Student",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Chemainus",
+      "size": "Unknown",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/central-island-roomate-wanted-private/3qqUpi6RLNS7fdrC56sepe",
+      "title": "Roomate Wanted Private Bathroom & Office included short term",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Nanaimo",
+      "size": "Bachelor",
+      "price": "$1,225",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bachelor-suite-close-to/g3ZphfBppzEzLrY58BMvW3",
+      "title": "Bachelor suite close to VIU and Hospital",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Nanaimo",
+      "size": "Bachelor",
+      "price": "$1,225",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bachelor-suite-close-to/8PhtDMMw9AbBPzbGGyM5vo",
+      "title": "Bachelor suite close to VIU and Hospital",
+      "source": "Craigslist"
+    },
+    {
+      "address": "2766 fairfeild st near Bell Mckinnon",
+      "size": "Unknown",
+      "price": "$1,234",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-short-term-rental/wMFsTsCfe6YmQmrnt4fbMA",
+      "title": "Short Term Rental",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Nanaimo",
+      "size": "Bachelor",
+      "price": "$1,250",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-bachelor-suite-franklyn-st/odyQpGWekVs62EsLdqiHYQ",
+      "title": "Bachelor Suite - Franklyn St",
+      "source": "Craigslist"
+    },
+    {
+      "address": "2548 Lewis St",
+      "size": "1 Bedroom",
+      "price": "$1,325",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-bedroom-suite-at-westwind-manor/8enAnpiGwPiCGUiR8Ww8ce",
+      "title": "1 Bedroom Suite at Westwind Manor",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Prideaux near Comox",
+      "size": "1 Bedroom",
+      "price": "$1,350",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-bed-room-apartment/gPf8qn3ghL3iegc5jXXxiD",
+      "title": "1 bed room apartment",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Central Nanaimo/Hospital Area",
+      "size": "Bachelor",
+      "price": "$1,375",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/wRBdbfVkCAFZodwJi6tqkC",
+      "title": "Near VIU+Hospital Stunning, Bright Bachelor Suite",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Central Nanaimo/Hospital Area",
+      "size": "Bachelor",
+      "price": "$1,375",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/hSEXe5e3s6DPjVGcdRs3xb",
+      "title": "Near VIU+Hospital Stunning, Bright Bachelor Suite",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Central Nanaimo/Hospital Area",
+      "size": "Bachelor",
+      "price": "$1,375",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/auXCJxhxHkpkEy3p8sRnWg",
+      "title": "Near VIU+Hospital Stunning, Bright Bachelor Suite",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Central Nanaimo/Hospital Area",
+      "size": "Bachelor",
+      "price": "$1,375",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital-bright/3iYdbc2KzShv87qUXyHLTG",
+      "title": "Near VIU+Hospital Bright, Beautifiul Bachelor Suite",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Central Nanaimo/Hospital Area",
+      "size": "Bachelor",
+      "price": "$1,375",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital-bright/1SpeNRs3YEsbNwzGJPSYAX",
+      "title": "Near VIU+Hospital Bright, Beautifiul Bachelor Suite",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Central Nanaimo/Hospital Area",
+      "size": "Bachelor",
+      "price": "$1,375",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/1sAnzxinXePH6MjTXcp2S9",
+      "title": "Near VIU+Hospital Stunning, Bright Bachelor Suite With carport",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Central Nanaimo/Hospital Area",
+      "size": "Bachelor",
+      "price": "$1,375",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/sqq1chSR9vsKeK2o4bEg3Q",
+      "title": "Near VIU+Hospital Beautiful Bright Bachelor with carport",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Central Nanaimo",
+      "size": "Studio",
+      "price": "$1,375",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-beautiful-stylish/wMnX3h5sGbSLkDQFKob9V5",
+      "title": "Beautiful stylish studio with carport",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Central Nanaimo/Hospital Area",
+      "size": "Studio",
+      "price": "$1,375",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/uVfKwHafCgBY5EfjSPZyRk",
+      "title": "Near VIU+Hospital Stunning, Bright Studio with Carport in a nice area",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Central Nanaimo/Hospital Area",
+      "size": "Studio",
+      "price": "$1,375",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/6Sy6yENdKfPTgxGgBY8vvV",
+      "title": "Near VIU+Hospital Stunning, Bright Studio",
+      "source": "Craigslist"
+    },
+    {
+      "address": "620 Pine St",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-pet-friendly-lovely-bedroom/cPEvf2pkUaAHkDeAAnCCit",
+      "title": "Pet friendly, Lovely 1 bedroom, 1 bathroom unit",
+      "source": "Craigslist"
+    },
+    {
+      "address": "620 Pine St",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-pet-friendly-bed-bath-walking/bdwXaZodMraXmixBUentDP",
+      "title": "Pet friendly, 1 bed 1 bath, walking distance to downtown Nanaimo",
+      "source": "Craigslist"
+    },
+    {
+      "address": "2551 Alexander St",
+      "size": "Unknown",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-bedroom-suite-holly-house/o4rrUmdR1szNSE17XGp2fV",
+      "title": "1-bedroom Suite - Holly House",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Hospital Area",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-bedroom-plus-den/7kxB7Gt3n336hqPkKJB4p5",
+      "title": "1 Bedroom Plus Den",
+      "source": "Craigslist"
+    },
+    {
+      "address": "1500 Boundary Cres",
+      "size": "1 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-bdrm-suite-top-floor-1450-avail/gm7rKj1HRFunsq4Nuh9K6H",
+      "title": "1 Bdrm Suite TOP FLOOR $1,450 Avail August 1st! NEW decks!",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Chemainus",
+      "size": "1 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/d4Ni7C8kVttfzggdF9cET8",
+      "title": "1 Bedroom Suite - Ashley Court",
+      "source": "Craigslist"
+    },
+    {
+      "address": "port alberni",
+      "size": "1 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/port-alberni-bedroom-with-free-heat/3j8rTMC9MNwh7gRWd8gfYw",
+      "title": "Port Alberni 1 bedroom with Free Heat & Hotwater",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Ladysmith",
+      "size": "2 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-seaview-manor/5SmgYCn8KmgWWJ3Erc9Dtq",
+      "title": "2 Bedroom Suite - Seaview Manor",
+      "source": "Craigslist"
+    },
+    {
+      "address": "Lantzville",
+      "size": "Bachelor",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/central-island-bachelor-cottage/qKgYVWuwSn5khdjEbFnfEM",
+      "title": "Bachelor Cottage",
+      "source": "Craigslist"
+    }
+  ],
+  "error": "",
   "max_price": 1500
 }
