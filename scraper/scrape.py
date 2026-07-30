@@ -255,158 +255,18 @@ def _cl_fetch_details(url: str) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# Kijiji
+# Kijiji (skipped — JS-rendered, see function docstring)
 # ---------------------------------------------------------------------------
-
-KIJIJI_BASE = "https://www.kijiji.ca"
-KIJIJI_SEARCH = KIJIJI_BASE + "/b-apartments-condos/nanaimo/c37l1700167"
 
 
 def scrape_kijiji() -> list[dict]:
+    """Kijiji is fully client-side rendered (Next.js + Apollo GraphQL).
+    Listings load via JavaScript API calls after page load — not present
+    in the initial HTML.  BeautifulSoup cannot execute JS, so we skip it
+    rather than burning time on a guaranteed empty parse."""
     log.info("--- Kijiji ---")
-    soup = fetch_page(KIJIJI_SEARCH)
-    if not soup:
-        return []
-
-    listings: list[dict] = []
-
-    # Kijiji renders listing cards server-side.  Try several known containers.
-    for sel in [
-        "div[data-testid='listing-card']",
-        "div.search-item",
-        "div.regular-ad",
-        "section[data-testid='listing-card']",
-    ]:
-        cards = soup.select(sel)
-        if cards:
-            log.info("Matched %d Kijiji cards using '%s'", len(cards), sel)
-            for card in cards:
-                listing = _kj_parse_card(card)
-                if listing:
-                    listings.append(listing)
-            break
-
-    if not listings:
-        # Broad fallback: look for <a> links that go to /v-* (Kijiji listing URLs)
-        log.warning("No Kijiji card selectors matched; scanning for listing links")
-        for a in soup.find_all("a", href=True):
-            href = a["href"]
-            if re.search(r"/v-(apartments-condos|rental)/", href):
-                title = a.get_text(strip=True)
-                if title:
-                    listings.append({
-                        "address": "Nanaimo",
-                        "size": parse_size_type(title),
-                        "price": "N/A",
-                        "contact": "See listing",
-                        "link": make_abs(href, KIJIJI_BASE),
-                        "title": title,
-                        "source": "Kijiji",
-                    })
-
-    log.info("Kijiji raw: %d listings", len(listings))
-
-    # Deep-scrape
-    for i, listing in enumerate(listings):
-        if not listing["link"]:
-            continue
-        log.info("[KJ %d/%d] %s", i + 1, len(listings), listing["title"][:60])
-        time.sleep(REQUEST_DELAY)
-        details = _kj_fetch_details(listing["link"])
-        if details.get("address"):
-            listing["address"] = details["address"]
-        if details.get("contact") and details["contact"] != "See listing":
-            listing["contact"] = details["contact"]
-
-    # Dedup by link
-    seen = set()
-    deduped = []
-    for l in listings:
-        if l["link"] and l["link"] not in seen:
-            seen.add(l["link"])
-            deduped.append(l)
-        elif not l["link"]:
-            deduped.append(l)
-    log.info("Kijiji after dedup: %d", len(deduped))
-    return deduped
-
-
-def _kj_parse_card(card) -> dict | None:
-    # Title
-    title_el = (
-        card.find("a", attrs={"data-testid": "listing-link"})
-        or card.find("a", class_="title")
-        or card.find("a", href=re.compile(r"/v-"))
-    )
-    if not title_el:
-        return None
-    title = title_el.get_text(strip=True)
-    link = make_abs(title_el.get("href", ""), KIJIJI_BASE)
-
-    # Price
-    price_el = (
-        card.find(attrs={"data-testid": "listing-price"})
-        or card.find("div", class_="price")
-        or card.find("span", class_="price")
-    )
-    price = clean_price(price_el.get_text(strip=True)) if price_el else "N/A"
-
-    # Location
-    loc_el = (
-        card.find(attrs={"data-testid": "listing-location"})
-        or card.find("div", class_="location")
-        or card.find("span", class_="address")
-    )
-    location = loc_el.get_text(strip=True) if loc_el else "Nanaimo"
-
-    return {
-        "address": location,
-        "size": parse_size_type(title),
-        "price": price,
-        "contact": "See listing",
-        "link": link,
-        "title": title,
-        "source": "Kijiji",
-    }
-
-
-def _kj_fetch_details(url: str) -> dict:
-    details: dict = {"address": "", "contact": ""}
-    soup = fetch_page(url)
-    if not soup:
-        return details
-
-    # Address — Kijiji shows it near the map
-    addr_el = (
-        soup.find(attrs={"data-testid": "listing-address"})
-        or soup.find("span", itemprop="address")
-        or soup.find("div", class_="addressContainer-")
-    )
-    if addr_el:
-        details["address"] = addr_el.get_text(strip=True)
-
-    # Contact — phone in description body
-    body_el = (
-        soup.find("div", itemprop="description")
-        or soup.find("div", class_="descriptionContainer-")
-        or soup.find("div", id="MainContainer")
-    )
-    if body_el:
-        phone = extract_phone(body_el.get_text())
-        if phone:
-            details["contact"] = phone
-
-    # Contact — Kijiji "show phone" button means there's a phone
-    if not details["contact"]:
-        if soup.find("button", attrs={"data-testid": "show-phone"}):
-            details["contact"] = "Phone available on listing"
-        elif soup.find("button", string=re.compile(r"show|reveal|contact", re.I)):
-            details["contact"] = "Contact via Kijiji"
-
-    if not details["contact"]:
-        details["contact"] = "See listing"
-
-    return details
+    log.warning("Kijiji is JS-rendered — skipping (requires Playwright/Selenium, too heavy for free CI)")
+    return []
 
 
 # ---------------------------------------------------------------------------
