@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-31T16:12:31.489577+00:00",
+  "last_updated": "2026-08-03T16:38:47.683395+00:00",
   "listings": [
     {
       "address": "285 Rosehill Street",
@@ -25,16 +25,9 @@
     {
       "address": "Nanaimo",
       "size": "1 Bedroom",
-      "price": "$1,000",
+      "price": "$1,050",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-bedroom-bath-studio-suite/jyb1hSUMbG2ANXvtsixfQd"
-    },
-    {
-      "address": "Nanaimo",
-      "size": "1 Bedroom",
-      "price": "$1,000",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bachelor-suite-for/dAHA7XqSw6MzUSJr7R5chK"
     },
     {
       "address": "Nanaimo",
@@ -44,18 +37,18 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-central-bachelor-suite-close-to/g3ZphfBppzEzLrY58BMvW3"
     },
     {
+      "address": "North Cowichan",
+      "size": "1 Bedroom",
+      "price": "$1,250",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-completely-newly-renovated-one/ejcqUS2PPkizzND8BM8Bgo"
+    },
+    {
       "address": "Nanaimo",
       "size": "0 Bedroom",
       "price": "$1,250",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-south-bachelor-suite-franklyn-st/odyQpGWekVs62EsLdqiHYQ"
-    },
-    {
-      "address": "2548 Lewis St",
-      "size": "1 Bedroom",
-      "price": "$1,325",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-bedroom-suite-at-westwind-manor/8enAnpiGwPiCGUiR8Ww8ce"
     },
     {
       "address": "Prideaux near Comox",
@@ -69,7 +62,7 @@
       "size": "0 Bedroom",
       "price": "$1,375",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/wRBdbfVkCAFZodwJi6tqkC"
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/ogjJXyMw9Y6LfXm29gQe7B"
     },
     {
       "address": "Central Nanaimo/Hospital Area",
@@ -77,13 +70,6 @@
       "price": "$1,375",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/1sAnzxinXePH6MjTXcp2S9"
-    },
-    {
-      "address": "Central Nanaimo/Hospital Area",
-      "size": "0 Bedroom",
-      "price": "$1,375",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/uVfKwHafCgBY5EfjSPZyRk"
     },
     {
       "address": "Central Nanaimo",
@@ -112,13 +98,6 @@
       "price": "$1,400",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/duncan-bedroom-suite-holly-house/o4rrUmdR1szNSE17XGp2fV"
-    },
-    {
-      "address": "Hospital Area",
-      "size": "1 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-bedroom-plus-den/7kxB7Gt3n336hqPkKJB4p5"
     },
     {
       "address": "1500 Boundary Cres",
