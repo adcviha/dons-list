@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-03T16:38:47.683395+00:00",
+  "last_updated": "2026-08-05T16:11:01.168612+00:00",
   "listings": [
     {
       "address": "285 Rosehill Street",
@@ -58,20 +58,6 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-bed-room-apartment/gPf8qn3ghL3iegc5jXXxiD"
     },
     {
-      "address": "Central Nanaimo/Hospital Area",
-      "size": "0 Bedroom",
-      "price": "$1,375",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/ogjJXyMw9Y6LfXm29gQe7B"
-    },
-    {
-      "address": "Central Nanaimo/Hospital Area",
-      "size": "0 Bedroom",
-      "price": "$1,375",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-near-viuhospital/1sAnzxinXePH6MjTXcp2S9"
-    },
-    {
       "address": "Central Nanaimo",
       "size": "1 Bedroom",
       "price": "$1,375",
@@ -100,13 +86,6 @@
       "link": "https://www.craigslist.org/view/d/duncan-bedroom-suite-holly-house/o4rrUmdR1szNSE17XGp2fV"
     },
     {
-      "address": "1500 Boundary Cres",
-      "size": "1 Bedroom",
-      "price": "$1,450",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-bdrm-suite-top-floor-1450-avail/gm7rKj1HRFunsq4Nuh9K6H"
-    },
-    {
       "address": "Chemainus",
       "size": "1 Bedroom",
       "price": "$1,450",
@@ -119,6 +98,13 @@
       "price": "$1,450",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/port-alberni-bedroom-with-free-heat/3j8rTMC9MNwh7gRWd8gfYw"
+    },
+    {
+      "address": "1500 Boundary Cres",
+      "size": "1 Bedroom",
+      "price": "$1,475",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-bdrm-suite-top-floor-1475-avail/gm7rKj1HRFunsq4Nuh9K6H"
     },
     {
       "address": "Ladysmith",
