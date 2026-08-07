@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-05T16:11:01.168612+00:00",
+  "last_updated": "2026-08-07T15:08:22.629876+00:00",
   "listings": [
+    {
+      "address": "5 - 6901 Island Hwy W near Bowser Rd",
+      "size": "0 Bedroom",
+      "price": "$800",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/bowser-full-time-rv-site-in-bowser/wqZ2WxZ8UcMWBoLdJ4Bb8o"
+    },
     {
       "address": "285 Rosehill Street",
       "size": "0 Bedroom",
@@ -51,9 +58,23 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-bachelor-suite-franklyn-st/odyQpGWekVs62EsLdqiHYQ"
     },
     {
+      "address": "91 Chapel St,  Nanaimo, BC V9R 0J3",
+      "size": "1 Bedroom",
+      "price": "$1,300",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-bedroom-bathroom-condo/4qMEPpqe7pvUPFvmZddjni"
+    },
+    {
+      "address": "Dover Rd near Waterbury",
+      "size": "1 Bedroom",
+      "price": "$1,300",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/kyuquot-new-basement-studio-for-rent/x3h2FQnij6RUU95Jb2c4Bf"
+    },
+    {
       "address": "Prideaux near Comox",
       "size": "1 Bedroom",
-      "price": "$1,350",
+      "price": "$1,300",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-bed-room-apartment/gPf8qn3ghL3iegc5jXXxiD"
     },
@@ -63,6 +84,13 @@
       "price": "$1,375",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-beautiful-stylish/wMnX3h5sGbSLkDQFKob9V5"
+    },
+    {
+      "address": "Biscay Road near Westview Street",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-large-bedroom-ground-level-suite/gx9ADprzoA2gHxdaTwxspo"
     },
     {
       "address": "620 Pine St",
@@ -105,6 +133,13 @@
       "price": "$1,475",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-bdrm-suite-top-floor-1475-avail/gm7rKj1HRFunsq4Nuh9K6H"
+    },
+    {
+      "address": "119 Haliburton St Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,475",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-newer-condo-downtown/vQgbMLonMh56AJdvxtbeu5"
     },
     {
       "address": "Ladysmith",
