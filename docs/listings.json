@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-07T15:08:22.629876+00:00",
+  "last_updated": "2026-08-10T15:13:37.885748+00:00",
   "listings": [
+    {
+      "address": "5788 Bradbury Rd",
+      "size": "1 Bedroom",
+      "price": "$660",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-bedroom/dqHj1PFwXz9iMroc3uqJot"
+    },
     {
       "address": "5 - 6901 Island Hwy W near Bowser Rd",
       "size": "0 Bedroom",
@@ -37,18 +44,18 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-bedroom-bath-studio-suite/jyb1hSUMbG2ANXvtsixfQd"
     },
     {
+      "address": "2515 Alexander St, North Cowichan, BC V9L 2W8",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-one-bedroom-one-bathroom/hdDdwmzzvKzo31D8TXB53E"
+    },
+    {
       "address": "Nanaimo",
       "size": "0 Bedroom",
       "price": "$1,225",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-bachelor-suite-close-to/g3ZphfBppzEzLrY58BMvW3"
-    },
-    {
-      "address": "North Cowichan",
-      "size": "1 Bedroom",
-      "price": "$1,250",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-completely-newly-renovated-one/ejcqUS2PPkizzND8BM8Bgo"
     },
     {
       "address": "Nanaimo",
@@ -84,13 +91,6 @@
       "price": "$1,375",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-beautiful-stylish/wMnX3h5sGbSLkDQFKob9V5"
-    },
-    {
-      "address": "Biscay Road near Westview Street",
-      "size": "1 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-large-bedroom-ground-level-suite/gx9ADprzoA2gHxdaTwxspo"
     },
     {
       "address": "620 Pine St",
