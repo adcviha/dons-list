@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-10T15:13:37.885748+00:00",
+  "last_updated": "2026-08-12T15:11:57.115200+00:00",
   "listings": [
     {
       "address": "5788 Bradbury Rd",
@@ -34,21 +34,21 @@
       "size": "1 Bedroom",
       "price": "$950",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-condonium-apartment-for/otkvTphPnafr3EJHdKWE4p"
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-condonium-apartment-for/6fzahi76yH6ZYYnJTkWrYb"
     },
     {
       "address": "Nanaimo",
       "size": "1 Bedroom",
-      "price": "$1,050",
+      "price": "$1,100",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-bedroom-bath-studio-suite/jyb1hSUMbG2ANXvtsixfQd"
     },
     {
-      "address": "2515 Alexander St, North Cowichan, BC V9L 2W8",
-      "size": "1 Bedroom",
+      "address": "2226 Departure Bay Road",
+      "size": "0 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-one-bedroom-one-bathroom/hdDdwmzzvKzo31D8TXB53E"
+      "link": "https://www.craigslist.org/view/d/nanaimo-2226-departure-bay-road-studio/tiFRCLhm5jEm15AyhwQcH7"
     },
     {
       "address": "Nanaimo",
@@ -63,13 +63,6 @@
       "price": "$1,250",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-south-bachelor-suite-franklyn-st/odyQpGWekVs62EsLdqiHYQ"
-    },
-    {
-      "address": "91 Chapel St,  Nanaimo, BC V9R 0J3",
-      "size": "1 Bedroom",
-      "price": "$1,300",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-bedroom-bathroom-condo/4qMEPpqe7pvUPFvmZddjni"
     },
     {
       "address": "Dover Rd near Waterbury",
@@ -91,6 +84,13 @@
       "price": "$1,375",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-beautiful-stylish/wMnX3h5sGbSLkDQFKob9V5"
+    },
+    {
+      "address": "549 Prideaux Street",
+      "size": "0 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-549-prideaux-street/ecF5zMWk6F9WAbc9VgCjy9"
     },
     {
       "address": "620 Pine St",
@@ -126,13 +126,6 @@
       "price": "$1,450",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/port-alberni-bedroom-with-free-heat/3j8rTMC9MNwh7gRWd8gfYw"
-    },
-    {
-      "address": "1500 Boundary Cres",
-      "size": "1 Bedroom",
-      "price": "$1,475",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-bdrm-suite-top-floor-1475-avail/gm7rKj1HRFunsq4Nuh9K6H"
     },
     {
       "address": "119 Haliburton St Nanaimo, BC",
