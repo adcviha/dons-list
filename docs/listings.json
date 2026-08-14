@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-12T15:11:57.115200+00:00",
+  "last_updated": "2026-08-14T15:06:12.335902+00:00",
   "listings": [
     {
       "address": "5788 Bradbury Rd",
@@ -35,6 +35,13 @@
       "price": "$950",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-south-condonium-apartment-for/6fzahi76yH6ZYYnJTkWrYb"
+    },
+    {
+      "address": "Pine Street near Fifth Street",
+      "size": "0 Bedroom",
+      "price": "$1,050",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-nanaimo-central-garden-level/wj3JLhM42ya64h7BJNM2Ch"
     },
     {
       "address": "Nanaimo",
