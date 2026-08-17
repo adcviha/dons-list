@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-08-14T15:06:12.335902+00:00",
+  "last_updated": "2026-08-17T14:41:58.441644+00:00",
   "listings": [
     {
-      "address": "5788 Bradbury Rd",
-      "size": "1 Bedroom",
-      "price": "$660",
+      "address": "2520 Alexander St",
+      "size": "2 Bedroom",
+      "price": "$750",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-bedroom/dqHj1PFwXz9iMroc3uqJot"
+      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/apE1SDxXPjxZ7SMrPDhJBm"
     },
     {
       "address": "5 - 6901 Island Hwy W near Bowser Rd",
@@ -23,6 +23,13 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-central-ft2-apartments-for-rent/37RJhjUkbRn8AidCkpgyQe"
     },
     {
+      "address": "Divot Dr",
+      "size": "1 Bedroom",
+      "price": "$900",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-home-stay-students-fantastic/tfgarF8xBsFHE43ughrHCA"
+    },
+    {
       "address": "1000 near Trunk road",
       "size": "1 Bedroom",
       "price": "$900",
@@ -35,6 +42,13 @@
       "price": "$950",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-south-condonium-apartment-for/6fzahi76yH6ZYYnJTkWrYb"
+    },
+    {
+      "address": "Qualicum Beach",
+      "size": "2 Bedroom",
+      "price": "$975",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/qualicum-beach-rom-for-rent-all/5jrp4T5gWs5EQ9uyPvfHoZ"
     },
     {
       "address": "Pine Street near Fifth Street",
@@ -70,6 +84,20 @@
       "price": "$1,250",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-south-bachelor-suite-franklyn-st/odyQpGWekVs62EsLdqiHYQ"
+    },
+    {
+      "address": "Nanaimo",
+      "size": "1 Bedroom",
+      "price": "$1,275",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-beautiful-modern/hJpJwFVw2QxCMvWDzPc9Vj"
+    },
+    {
+      "address": "4728 Uplands Dr, Nanaimo, BC V9T 4S9",
+      "size": "1 Bedroom",
+      "price": "$1,300",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-north-one-bedroom-condo/fjpuP9FVWnuMq3DwHL3JvQ"
     },
     {
       "address": "Dover Rd near Waterbury",
