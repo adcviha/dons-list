@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-17T14:41:58.441644+00:00",
+  "last_updated": "2026-08-19T14:47:11.789789+00:00",
   "listings": [
     {
       "address": "2520 Alexander St",
@@ -28,13 +28,6 @@
       "price": "$900",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-home-stay-students-fantastic/tfgarF8xBsFHE43ughrHCA"
-    },
-    {
-      "address": "1000 near Trunk road",
-      "size": "1 Bedroom",
-      "price": "$900",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-rooms-available-in-duncan/vs3Re5R1jZEXbsoR7kKpNN"
     },
     {
       "address": "Nanaimo South",
@@ -93,13 +86,6 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-central-beautiful-modern/hJpJwFVw2QxCMvWDzPc9Vj"
     },
     {
-      "address": "4728 Uplands Dr, Nanaimo, BC V9T 4S9",
-      "size": "1 Bedroom",
-      "price": "$1,300",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-north-one-bedroom-condo/fjpuP9FVWnuMq3DwHL3JvQ"
-    },
-    {
       "address": "Dover Rd near Waterbury",
       "size": "1 Bedroom",
       "price": "$1,300",
@@ -112,20 +98,6 @@
       "price": "$1,300",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-bed-room-apartment/gPf8qn3ghL3iegc5jXXxiD"
-    },
-    {
-      "address": "Central Nanaimo",
-      "size": "1 Bedroom",
-      "price": "$1,375",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-beautiful-stylish/wMnX3h5sGbSLkDQFKob9V5"
-    },
-    {
-      "address": "549 Prideaux Street",
-      "size": "0 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-549-prideaux-street/ecF5zMWk6F9WAbc9VgCjy9"
     },
     {
       "address": "620 Pine St",
@@ -149,6 +121,13 @@
       "link": "https://www.craigslist.org/view/d/duncan-bedroom-suite-holly-house/o4rrUmdR1szNSE17XGp2fV"
     },
     {
+      "address": "549 Prideaux Street",
+      "size": "0 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-549-prideaux-street/ecF5zMWk6F9WAbc9VgCjy9"
+    },
+    {
       "address": "Chemainus",
       "size": "1 Bedroom",
       "price": "$1,450",
@@ -156,18 +135,18 @@
       "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/d4Ni7C8kVttfzggdF9cET8"
     },
     {
-      "address": "port alberni",
-      "size": "1 Bedroom",
-      "price": "$1,450",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/port-alberni-bedroom-with-free-heat/3j8rTMC9MNwh7gRWd8gfYw"
-    },
-    {
       "address": "119 Haliburton St Nanaimo, BC",
       "size": "1 Bedroom",
       "price": "$1,475",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-south-newer-condo-downtown/vQgbMLonMh56AJdvxtbeu5"
+    },
+    {
+      "address": "550 Bradley Street",
+      "size": "1 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-bradley-street/gMv82yL7SnBtB67m3kBsEx"
     },
     {
       "address": "Ladysmith",
