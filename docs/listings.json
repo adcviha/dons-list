@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19T14:47:11.789789+00:00",
+  "last_updated": "2026-08-21T14:49:08.465526+00:00",
   "listings": [
     {
       "address": "2520 Alexander St",
@@ -51,13 +51,6 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-nanaimo-central-garden-level/wj3JLhM42ya64h7BJNM2Ch"
     },
     {
-      "address": "Nanaimo",
-      "size": "1 Bedroom",
-      "price": "$1,100",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-bedroom-bath-studio-suite/jyb1hSUMbG2ANXvtsixfQd"
-    },
-    {
       "address": "2226 Departure Bay Road",
       "size": "0 Bedroom",
       "price": "$1,200",
@@ -86,6 +79,13 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-central-beautiful-modern/hJpJwFVw2QxCMvWDzPc9Vj"
     },
     {
+      "address": "port alberni",
+      "size": "0 Bedroom",
+      "price": "$1,300",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/port-alberni-studio-with-free-heat/dAPv24SEPKqRvFJCTGbat6"
+    },
+    {
       "address": "Dover Rd near Waterbury",
       "size": "1 Bedroom",
       "price": "$1,300",
@@ -100,18 +100,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-bed-room-apartment/gPf8qn3ghL3iegc5jXXxiD"
     },
     {
-      "address": "620 Pine St",
+      "address": "5363 Dewar Rd near Lost Lake Road",
       "size": "1 Bedroom",
-      "price": "$1,400",
+      "price": "$1,350",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-pet-friendly-lovely-bedroom/cPEvf2pkUaAHkDeAAnCCit"
-    },
-    {
-      "address": "620 Pine St",
-      "size": "1 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-pet-friendly-bed-bath-walking/bdwXaZodMraXmixBUentDP"
+      "link": "https://www.craigslist.org/view/d/nanaimo-oceanview-bdrmden/hQtGPUE1ERitSZPXNR2LKy"
     },
     {
       "address": "2551 Alexander St",
@@ -128,18 +121,32 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-549-prideaux-street/ecF5zMWk6F9WAbc9VgCjy9"
     },
     {
+      "address": "620 Pine St",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-pet-friendly-lovely-bedroom/cPEvf2pkUaAHkDeAAnCCit"
+    },
+    {
+      "address": "620 Pine St",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-pet-friendly-bed-bath-walking/bdwXaZodMraXmixBUentDP"
+    },
+    {
+      "address": "port alberni",
+      "size": "1 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/port-alberni-bedroom-with-free-heat/iGHKkmbnRRE6K8cTKhydDZ"
+    },
+    {
       "address": "Chemainus",
       "size": "1 Bedroom",
       "price": "$1,450",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/d4Ni7C8kVttfzggdF9cET8"
-    },
-    {
-      "address": "119 Haliburton St Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,475",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-newer-condo-downtown/vQgbMLonMh56AJdvxtbeu5"
     },
     {
       "address": "550 Bradley Street",
