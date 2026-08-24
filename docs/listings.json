@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-21T14:49:08.465526+00:00",
+  "last_updated": "2026-08-24T14:56:15.229393+00:00",
   "listings": [
     {
       "address": "2520 Alexander St",
@@ -51,18 +51,18 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-nanaimo-central-garden-level/wj3JLhM42ya64h7BJNM2Ch"
     },
     {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-north-beautiful-bedroom-home/5bUcvCLoR6WkcWSjg8dp34"
+    },
+    {
       "address": "2226 Departure Bay Road",
       "size": "0 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-2226-departure-bay-road-studio/tiFRCLhm5jEm15AyhwQcH7"
-    },
-    {
-      "address": "Nanaimo",
-      "size": "0 Bedroom",
-      "price": "$1,225",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bachelor-suite-close-to/g3ZphfBppzEzLrY58BMvW3"
     },
     {
       "address": "Nanaimo",
@@ -114,13 +114,6 @@
       "link": "https://www.craigslist.org/view/d/duncan-bedroom-suite-holly-house/o4rrUmdR1szNSE17XGp2fV"
     },
     {
-      "address": "549 Prideaux Street",
-      "size": "0 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-549-prideaux-street/ecF5zMWk6F9WAbc9VgCjy9"
-    },
-    {
       "address": "620 Pine St",
       "size": "1 Bedroom",
       "price": "$1,400",
@@ -135,6 +128,27 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-pet-friendly-bed-bath-walking/bdwXaZodMraXmixBUentDP"
     },
     {
+      "address": "549 Prideaux Street",
+      "size": "0 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-549-prideaux-street/ecF5zMWk6F9WAbc9VgCjy9"
+    },
+    {
+      "address": "2117 Meredith Road Nanaimo",
+      "size": "1 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bed-bath-condo-near-viu/aKio41DvUbAKNfor8TnNH7"
+    },
+    {
+      "address": "550 Bradley Street",
+      "size": "1 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-bradley-street/gMv82yL7SnBtB67m3kBsEx"
+    },
+    {
       "address": "port alberni",
       "size": "1 Bedroom",
       "price": "$1,450",
@@ -147,13 +161,6 @@
       "price": "$1,450",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/d4Ni7C8kVttfzggdF9cET8"
-    },
-    {
-      "address": "550 Bradley Street",
-      "size": "1 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-bradley-street/gMv82yL7SnBtB67m3kBsEx"
     },
     {
       "address": "Ladysmith",
