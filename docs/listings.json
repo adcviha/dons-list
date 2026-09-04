@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-02T17:55:13.358972+00:00",
+  "last_updated": "2026-09-04T17:38:21.477912+00:00",
   "listings": [
     {
       "address": "2520 Alexander St",
@@ -30,11 +30,11 @@
       "link": "https://www.craigslist.org/view/d/qualicum-beach-rom-for-rent-all/5jrp4T5gWs5EQ9uyPvfHoZ"
     },
     {
-      "address": "2574 Lewis st",
-      "size": "0 Bedroom",
-      "price": "$1,025",
+      "address": "3500 block 10th Ave.",
+      "size": "1 Bedroom",
+      "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-top-floor-bright-beautiful/5dLRrY6HpKzoWwnvfhGuSG"
+      "link": "https://www.craigslist.org/view/d/port-alberni-updated-one-bedroom-duplex/xnQbnx3vHoXEtBqMJjDoN9"
     },
     {
       "address": "Lake Cowichan Road",
@@ -48,7 +48,7 @@
       "size": "1 Bedroom",
       "price": "$1,290",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-stephensons-point-studio/ibDxzWfABfzJbjioYDrhfV"
+      "link": "https://www.craigslist.org/view/d/nanaimo-stephensons-point-studio/5d8WNuk8Rein6aHcw3qGHP"
     },
     {
       "address": "port alberni",
@@ -79,20 +79,6 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-central-bradley-st/2kjoBVjM2SLE954qycrmSB"
     },
     {
-      "address": "2551 Alexander St",
-      "size": "1 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-bedroom-suite-holly-house/o4rrUmdR1szNSE17XGp2fV"
-    },
-    {
-      "address": "Nanaimo",
-      "size": "1 Bedroom",
-      "price": "$1,410",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-old-city-area-funky-rustic-bdrm/8A29uus9vJYLqEiTsgTkcZ"
-    },
-    {
       "address": "550 Bradley Street",
       "size": "1 Bedroom",
       "price": "$1,450",
@@ -114,11 +100,11 @@
       "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/d4Ni7C8kVttfzggdF9cET8"
     },
     {
-      "address": "550 Bradley St",
-      "size": "1 Bedroom",
+      "address": "Argyle near 17th",
+      "size": "2 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-fully-furnished-bed-bath-one/6z8iavudanHukoaoqn43MY"
+      "link": "https://www.craigslist.org/view/d/port-alberni-beautiful-huge-bedroom/vv4bXRRcutmkNRXRbELbVU"
     },
     {
       "address": "160 Vancouver Avenue",
@@ -128,11 +114,25 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-vancouver-avenue/nYEbCkLRcSn7seMXVoRCgQ"
     },
     {
+      "address": "550 Bradley St",
+      "size": "1 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-fully-furnished-bed-bath-one/6z8iavudanHukoaoqn43MY"
+    },
+    {
       "address": "550 Bradley",
       "size": "1 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-bdrm-central-nanaimo-coin-op/s9GWzrhm4o6Whe9ySyXAFX"
+    },
+    {
+      "address": "Fairway Avenue",
+      "size": "1 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/sechelt-bachelor-suite-fully-furnished/4HaStcRQV2c1zqGRaCh17x"
     }
   ],
   "error": "",
