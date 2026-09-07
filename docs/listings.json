@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04T17:38:21.477912+00:00",
+  "last_updated": "2026-09-07T18:47:16.297788+00:00",
   "listings": [
     {
       "address": "2520 Alexander St",
@@ -37,20 +37,6 @@
       "link": "https://www.craigslist.org/view/d/port-alberni-updated-one-bedroom-duplex/xnQbnx3vHoXEtBqMJjDoN9"
     },
     {
-      "address": "Lake Cowichan Road",
-      "size": "1 Bedroom",
-      "price": "$1,200",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/lake-cowichan-one-bedroom-walk-out/gjAWSgzkTioyqgUVZBcR6d"
-    },
-    {
-      "address": "wavecrest near stephensons point road",
-      "size": "1 Bedroom",
-      "price": "$1,290",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-stephensons-point-studio/5d8WNuk8Rein6aHcw3qGHP"
-    },
-    {
       "address": "port alberni",
       "size": "0 Bedroom",
       "price": "$1,300",
@@ -77,6 +63,20 @@
       "price": "$1,350",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-bradley-st/2kjoBVjM2SLE954qycrmSB"
+    },
+    {
+      "address": "Departure Bay",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-north-bright-bedroom-suite/imoqP1cLogxJzrexuYL2eq"
+    },
+    {
+      "address": "220 Island Highway W Parksville, BC",
+      "size": "1 Bedroom",
+      "price": "$1,449",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/parksville-bright-and-spacious-corner/dVY9qBfB8J9x8xohNMCmNd"
     },
     {
       "address": "550 Bradley Street",
