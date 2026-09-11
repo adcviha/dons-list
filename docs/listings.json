@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-09-09T17:51:22.185067+00:00",
+  "last_updated": "2026-09-11T17:48:40.948763+00:00",
   "listings": [
+    {
+      "address": "Duncan",
+      "size": "1 Bedroom",
+      "price": "$695",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-weekly-rentals-695/tQzEehCuSq8iek2Ge4CFwn"
+    },
     {
       "address": "2520 Alexander St",
       "size": "2 Bedroom",
@@ -114,13 +121,6 @@
       "link": "https://www.craigslist.org/view/d/port-alberni-bedroom-with-free-heat/iGHKkmbnRRE6K8cTKhydDZ"
     },
     {
-      "address": "Victoria",
-      "size": "0 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/victoria-south-bachelor-suite-maple/bCg639jpHZPjEuvcwoeeDx"
-    },
-    {
       "address": "550 Bradley St",
       "size": "1 Bedroom",
       "price": "$1,500",
@@ -128,18 +128,18 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-fully-furnished-bed-bath-one/6z8iavudanHukoaoqn43MY"
     },
     {
+      "address": "Victoria",
+      "size": "0 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/victoria-south-bachelor-suite-maple/bCg639jpHZPjEuvcwoeeDx"
+    },
+    {
       "address": "Fairway Avenue",
       "size": "1 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/sechelt-bachelor-suite-fully-furnished/4HaStcRQV2c1zqGRaCh17x"
-    },
-    {
-      "address": "Argyle near 17th",
-      "size": "2 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/port-alberni-beautiful-huge-bedroom/vv4bXRRcutmkNRXRbELbVU"
     },
     {
       "address": "550 Bradley",
