@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-11T17:48:40.948763+00:00",
+  "last_updated": "2026-09-14T19:19:52.729717+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -23,6 +23,13 @@
       "link": "https://www.craigslist.org/view/d/bowser-full-time-rv-site-in-bowser/wqZ2WxZ8UcMWBoLdJ4Bb8o"
     },
     {
+      "address": "413 PRIDEAUX ST NANAIMO BC near Fanklyn",
+      "size": "1 Bedroom",
+      "price": "$890",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-furnished-private-bedroom-close/kVe5STkrqzLfvNRy2ReWtD"
+    },
+    {
       "address": "Nanaimo South",
       "size": "1 Bedroom",
       "price": "$950",
@@ -37,13 +44,6 @@
       "link": "https://www.craigslist.org/view/d/qualicum-beach-rom-for-rent-all/5jrp4T5gWs5EQ9uyPvfHoZ"
     },
     {
-      "address": "Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,200",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-bedroom-suite/dfdBSYNQ8Ktnmi2Ha9gCDm"
-    },
-    {
       "address": "3500 block 10th Ave.",
       "size": "1 Bedroom",
       "price": "$1,200",
@@ -56,6 +56,13 @@
       "price": "$1,250",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-south-bachelor-suite-franklyn-st/uEW2wUXhPQAvFM9FFHTQ47"
+    },
+    {
+      "address": "Port Alberni",
+      "size": "1 Bedroom",
+      "price": "$1,290",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/port-alberni-bedroom-ground-level/bL4iBP7GsP1WNH7Udm16zx"
     },
     {
       "address": "130 Vancouver Ave",
@@ -84,13 +91,6 @@
       "price": "$1,350",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-549-prideaux-street/ecF5zMWk6F9WAbc9VgCjy9"
-    },
-    {
-      "address": "Nanaimo",
-      "size": "1 Bedroom",
-      "price": "$1,350",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bradley-st/2kjoBVjM2SLE954qycrmSB"
     },
     {
       "address": "3040 Pine Street",
