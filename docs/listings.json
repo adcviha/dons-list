@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-14T19:19:52.729717+00:00",
+  "last_updated": "2026-09-16T18:13:34.476659+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -42,6 +42,13 @@
       "price": "$975",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/qualicum-beach-rom-for-rent-all/5jrp4T5gWs5EQ9uyPvfHoZ"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bright-ne-bedroom-home/ra8bpCnfX3hjzCxZZWh1jv"
     },
     {
       "address": "3500 block 10th Ave.",
@@ -93,18 +100,32 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-549-prideaux-street/ecF5zMWk6F9WAbc9VgCjy9"
     },
     {
+      "address": "Nanaimo",
+      "size": "1 Bedroom",
+      "price": "$1,350",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bradley-st/2kjoBVjM2SLE954qycrmSB"
+    },
+    {
+      "address": "Parkview Dr",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-bedroom-lower-suite-south/1a3tczaVek9yGwGSsw9C4F"
+    },
+    {
+      "address": "Hospital Area",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-bedroom-plus-den/qNscaivbrJqwQjuM1fMVuS"
+    },
+    {
       "address": "3040 Pine Street",
       "size": "1 Bedroom",
       "price": "$1,400",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/chemainus-bedroom-suite-available/sreVxGH3kawBGJqDkjcz42"
-    },
-    {
-      "address": "Departure Bay",
-      "size": "1 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-north-bright-bedroom-suite/imoqP1cLogxJzrexuYL2eq"
     },
     {
       "address": "Chemainus",
@@ -121,11 +142,18 @@
       "link": "https://www.craigslist.org/view/d/port-alberni-bedroom-with-free-heat/iGHKkmbnRRE6K8cTKhydDZ"
     },
     {
-      "address": "550 Bradley St",
+      "address": "110 Esplanade Avenue",
+      "size": "0 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
+    },
+    {
+      "address": "550 Bradley",
       "size": "1 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-fully-furnished-bed-bath-one/6z8iavudanHukoaoqn43MY"
+      "link": "https://www.craigslist.org/view/d/nanaimo-bdrm-central-nanaimo-coin-op/s9GWzrhm4o6Whe9ySyXAFX"
     },
     {
       "address": "Victoria",
@@ -135,18 +163,18 @@
       "link": "https://www.craigslist.org/view/d/victoria-south-bachelor-suite-maple/bCg639jpHZPjEuvcwoeeDx"
     },
     {
+      "address": "550 Bradley St",
+      "size": "1 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-fully-furnished-bed-bath-one/6z8iavudanHukoaoqn43MY"
+    },
+    {
       "address": "Fairway Avenue",
       "size": "1 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/sechelt-bachelor-suite-fully-furnished/4HaStcRQV2c1zqGRaCh17x"
-    },
-    {
-      "address": "550 Bradley",
-      "size": "1 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-bdrm-central-nanaimo-coin-op/s9GWzrhm4o6Whe9ySyXAFX"
     }
   ],
   "error": "",
