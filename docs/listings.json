@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-16T18:13:34.476659+00:00",
+  "last_updated": "2026-09-18T17:45:18.225649+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -30,18 +30,32 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-furnished-private-bedroom-close/kVe5STkrqzLfvNRy2ReWtD"
     },
     {
-      "address": "Nanaimo South",
-      "size": "1 Bedroom",
-      "price": "$950",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-condonium-apartment-for/6fzahi76yH6ZYYnJTkWrYb"
-    },
-    {
       "address": "Qualicum Beach",
       "size": "2 Bedroom",
       "price": "$975",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/qualicum-beach-rom-for-rent-all/5jrp4T5gWs5EQ9uyPvfHoZ"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/at6MfAGYee4k7zxZMCZ5md"
     },
     {
       "address": "Nanaimo, BC",
@@ -100,11 +114,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-549-prideaux-street/ecF5zMWk6F9WAbc9VgCjy9"
     },
     {
-      "address": "Nanaimo",
+      "address": "1360 Graham Cres near Boundary",
       "size": "1 Bedroom",
-      "price": "$1,350",
+      "price": "$1,400",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bradley-st/2kjoBVjM2SLE954qycrmSB"
+      "link": "https://www.craigslist.org/view/d/nanaimo-top-flr-bed-bath-near-the/ryZBGbtdwNq3guXqjP8xAy"
     },
     {
       "address": "Parkview Dr",
@@ -147,13 +161,6 @@
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
-    },
-    {
-      "address": "550 Bradley",
-      "size": "1 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-bdrm-central-nanaimo-coin-op/s9GWzrhm4o6Whe9ySyXAFX"
     },
     {
       "address": "Victoria",
