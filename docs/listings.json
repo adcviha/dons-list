@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-21T19:22:42.515000+00:00",
+  "last_updated": "2026-09-23T18:29:03.070064+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -34,13 +34,6 @@
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bright-ne-bedroom-home/ra8bpCnfX3hjzCxZZWh1jv"
-    },
-    {
-      "address": "Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,200",
-      "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
     },
     {
@@ -56,6 +49,20 @@
       "price": "$1,200",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/at6MfAGYee4k7zxZMCZ5md"
+    },
+    {
+      "address": "3500 block 10th Ave.",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/port-alberni-updated-one-bedroom-duplex/uBrbwhWPDxXi2mu828VSsM"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bright-ne-bedroom-home/ra8bpCnfX3hjzCxZZWh1jv"
     },
     {
       "address": "Nanaimo",
@@ -84,13 +91,6 @@
       "price": "$1,350",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-549-prideaux-street/ecF5zMWk6F9WAbc9VgCjy9"
-    },
-    {
-      "address": "Nanaimo",
-      "size": "1 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-north-one-bedroom-offers/8sAR1yfXdY3vu1Dboaapg2"
     },
     {
       "address": "Parkview Dr",
@@ -142,11 +142,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
     },
     {
-      "address": "8396 SaSeenos Road",
-      "size": "2 Bedroom",
+      "address": "Victoria",
+      "size": "0 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/central-island-42ft-beautiful-5th-wheel/jQkMs4vsW9A3LmmM1ns5CG"
+      "link": "https://www.craigslist.org/view/d/victoria-south-bachelor-suite-maple/bCg639jpHZPjEuvcwoeeDx"
     },
     {
       "address": "550 Bradley St",
@@ -156,11 +156,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-fully-furnished-bed-bath-one/6z8iavudanHukoaoqn43MY"
     },
     {
-      "address": "Victoria",
-      "size": "0 Bedroom",
+      "address": "8396 SaSeenos Road",
+      "size": "2 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/victoria-south-bachelor-suite-maple/bCg639jpHZPjEuvcwoeeDx"
+      "link": "https://www.craigslist.org/view/d/central-island-42ft-beautiful-5th-wheel/jQkMs4vsW9A3LmmM1ns5CG"
     }
   ],
   "error": "",
