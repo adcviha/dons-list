@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23T18:29:03.070064+00:00",
+  "last_updated": "2026-09-25T18:35:11.680370+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -14,6 +14,13 @@
       "price": "$750",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/apE1SDxXPjxZ7SMrPDhJBm"
+    },
+    {
+      "address": "5 - 6901 Island Hwy W near Bowser Rd",
+      "size": "0 Bedroom",
+      "price": "$775",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/bowser-full-time-rv-site-in-bowser/rZe2VGQHXZLSYia7KGAnja"
     },
     {
       "address": "413 PRIDEAUX ST NANAIMO BC near Fanklyn",
@@ -86,13 +93,6 @@
       "link": "https://www.craigslist.org/view/d/port-alberni-studio-with-free-heat/dAPv24SEPKqRvFJCTGbat6"
     },
     {
-      "address": "549 Prideaux Street",
-      "size": "0 Bedroom",
-      "price": "$1,350",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-549-prideaux-street/ecF5zMWk6F9WAbc9VgCjy9"
-    },
-    {
       "address": "Parkview Dr",
       "size": "1 Bedroom",
       "price": "$1,400",
@@ -135,13 +135,6 @@
       "link": "https://www.craigslist.org/view/d/port-alberni-bedroom-with-free-heat/iGHKkmbnRRE6K8cTKhydDZ"
     },
     {
-      "address": "110 Esplanade Avenue",
-      "size": "0 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
-    },
-    {
       "address": "Victoria",
       "size": "0 Bedroom",
       "price": "$1,500",
@@ -154,6 +147,13 @@
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-fully-furnished-bed-bath-one/6z8iavudanHukoaoqn43MY"
+    },
+    {
+      "address": "110 Esplanade Avenue",
+      "size": "0 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
     },
     {
       "address": "8396 SaSeenos Road",
