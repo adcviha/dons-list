@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-25T18:35:11.680370+00:00",
+  "last_updated": "2026-09-28T20:36:47.614961+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -41,6 +41,13 @@
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/at6MfAGYee4k7zxZMCZ5md"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
     },
     {
@@ -49,13 +56,6 @@
       "price": "$1,200",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
-    },
-    {
-      "address": "Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,200",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/at6MfAGYee4k7zxZMCZ5md"
     },
     {
       "address": "3500 block 10th Ave.",
@@ -100,13 +100,6 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-bedroom-lower-suite-south/1a3tczaVek9yGwGSsw9C4F"
     },
     {
-      "address": "1360 Graham Cres near Boundary",
-      "size": "1 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-top-flr-bed-bath-near-the/ryZBGbtdwNq3guXqjP8xAy"
-    },
-    {
       "address": "3040 Pine Street",
       "size": "1 Bedroom",
       "price": "$1,400",
@@ -135,11 +128,11 @@
       "link": "https://www.craigslist.org/view/d/port-alberni-bedroom-with-free-heat/iGHKkmbnRRE6K8cTKhydDZ"
     },
     {
-      "address": "Victoria",
+      "address": "110 Esplanade Avenue",
       "size": "0 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/victoria-south-bachelor-suite-maple/bCg639jpHZPjEuvcwoeeDx"
+      "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
     },
     {
       "address": "550 Bradley St",
@@ -149,11 +142,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-fully-furnished-bed-bath-one/6z8iavudanHukoaoqn43MY"
     },
     {
-      "address": "110 Esplanade Avenue",
+      "address": "Victoria",
       "size": "0 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
+      "link": "https://www.craigslist.org/view/d/victoria-south-bachelor-suite-maple/bCg639jpHZPjEuvcwoeeDx"
     },
     {
       "address": "8396 SaSeenos Road",
