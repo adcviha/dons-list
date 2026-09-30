@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28T20:36:47.614961+00:00",
+  "last_updated": "2026-09-30T19:11:16.882154+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -7,13 +7,6 @@
       "price": "$695",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/duncan-weekly-rentals-695/tQzEehCuSq8iek2Ge4CFwn"
-    },
-    {
-      "address": "2520 Alexander St",
-      "size": "2 Bedroom",
-      "price": "$750",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/apE1SDxXPjxZ7SMrPDhJBm"
     },
     {
       "address": "5 - 6901 Island Hwy W near Bowser Rd",
@@ -37,6 +30,20 @@
       "link": "https://www.craigslist.org/view/d/qualicum-beach-rom-for-rent-all/5jrp4T5gWs5EQ9uyPvfHoZ"
     },
     {
+      "address": "Sointula BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/north-island-room-oceanfront-room-with/t4nELdGxJ9JYRTLp3iXvhE"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
+    },
+    {
       "address": "Nanaimo, BC",
       "size": "1 Bedroom",
       "price": "$1,200",
@@ -49,13 +56,6 @@
       "price": "$1,200",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
-    },
-    {
-      "address": "Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,200",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
     },
     {
       "address": "3500 block 10th Ave.",
@@ -107,6 +107,20 @@
       "link": "https://www.craigslist.org/view/d/chemainus-bedroom-suite-available/sreVxGH3kawBGJqDkjcz42"
     },
     {
+      "address": "2541 Dingwall",
+      "size": "1 Bedroom",
+      "price": "$1,425",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-large-bedroom-duncan-wild-rose/owrUUYHVs94VGHJJDKGgU5"
+    },
+    {
+      "address": "2220 Sun Valley Drive",
+      "size": "1 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-2220-sun-valley-drive-lower/4Ru8dpWwDYuaqcwDukepVJ"
+    },
+    {
       "address": "Youbou, BC",
       "size": "2 Bedroom",
       "price": "$1,450",
@@ -126,6 +140,20 @@
       "price": "$1,450",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/port-alberni-bedroom-with-free-heat/iGHKkmbnRRE6K8cTKhydDZ"
+    },
+    {
+      "address": "Ladysmith",
+      "size": "1 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-in-brand-new/v5JBSii7yva82bNZDXU27A"
+    },
+    {
+      "address": "2262 Ashlee Road",
+      "size": "2 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-2262-ashlee-road-lower/pRsZAx1GWyYape4j98bNvM"
     },
     {
       "address": "110 Esplanade Avenue",
