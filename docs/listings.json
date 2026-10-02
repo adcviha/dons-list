@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-30T19:11:16.882154+00:00",
+  "last_updated": "2026-10-02T19:17:05.641422+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -7,6 +7,13 @@
       "price": "$695",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/duncan-weekly-rentals-695/tQzEehCuSq8iek2Ge4CFwn"
+    },
+    {
+      "address": "2520 Alexander St",
+      "size": "2 Bedroom",
+      "price": "$750",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/mtiigUKrn5W3JQJK2zjCRY"
     },
     {
       "address": "5 - 6901 Island Hwy W near Bowser Rd",
@@ -21,13 +28,6 @@
       "price": "$890",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-furnished-private-bedroom-close/kVe5STkrqzLfvNRy2ReWtD"
-    },
-    {
-      "address": "Qualicum Beach",
-      "size": "2 Bedroom",
-      "price": "$975",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/qualicum-beach-rom-for-rent-all/5jrp4T5gWs5EQ9uyPvfHoZ"
     },
     {
       "address": "Sointula BC",
@@ -79,11 +79,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-bachelor-suite-franklyn-st/uEW2wUXhPQAvFM9FFHTQ47"
     },
     {
-      "address": "130 Vancouver Ave",
-      "size": "0 Bedroom",
+      "address": "1600 Dufferin Cres, Nanaimo, BC V9S 5N2",
+      "size": "1 Bedroom",
       "price": "$1,300",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-vancouver-ave-bright-modern/4xzCNbbREm14YiDDx7imLm"
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-updated-bed-bath-home/6yhwvJMejzVgUo2MZ9YspB"
     },
     {
       "address": "port alberni",
@@ -91,6 +91,13 @@
       "price": "$1,300",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/port-alberni-studio-with-free-heat/dAPv24SEPKqRvFJCTGbat6"
+    },
+    {
+      "address": "2548 Lewis St",
+      "size": "1 Bedroom",
+      "price": "$1,375",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-bedroom-suite-at-westwind-manor/44qfUpHxv11getanmMDefZ"
     },
     {
       "address": "Parkview Dr",
@@ -149,18 +156,11 @@
       "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-in-brand-new/v5JBSii7yva82bNZDXU27A"
     },
     {
-      "address": "2262 Ashlee Road",
-      "size": "2 Bedroom",
+      "address": "Baden  Poweell near Esplanade",
+      "size": "1 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-2262-ashlee-road-lower/pRsZAx1GWyYape4j98bNvM"
-    },
-    {
-      "address": "110 Esplanade Avenue",
-      "size": "0 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
+      "link": "https://www.craigslist.org/view/d/ladysmith-basement-suite-for-rent/jk2ML1vTakwWk7veU7EVgq"
     },
     {
       "address": "550 Bradley St",
@@ -168,6 +168,20 @@
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-fully-furnished-bed-bath-one/6z8iavudanHukoaoqn43MY"
+    },
+    {
+      "address": "2262 Ashlee Road",
+      "size": "2 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-2265-ashlee-road-lower/pRsZAx1GWyYape4j98bNvM"
+    },
+    {
+      "address": "110 Esplanade Avenue",
+      "size": "0 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
     },
     {
       "address": "Victoria",
