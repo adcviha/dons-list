@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-05T21:35:59.026860+00:00",
+  "last_updated": "2026-10-07T20:02:08.459734+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -30,11 +30,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-furnished-private-bedroom-close/kVe5STkrqzLfvNRy2ReWtD"
     },
     {
-      "address": "Sointula BC",
+      "address": "Nanaimo, BC",
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/north-island-room-oceanfront-room-with/t4nELdGxJ9JYRTLp3iXvhE"
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
     },
     {
       "address": "Nanaimo, BC",
@@ -48,14 +48,14 @@
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/at6MfAGYee4k7zxZMCZ5md"
     },
     {
-      "address": "Nanaimo, BC",
+      "address": "Sointula BC",
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/at6MfAGYee4k7zxZMCZ5md"
+      "link": "https://www.craigslist.org/view/d/north-island-room-oceanfront-room-with/t4nELdGxJ9JYRTLp3iXvhE"
     },
     {
       "address": "3500 block 10th Ave.",
@@ -121,6 +121,13 @@
       "link": "https://www.craigslist.org/view/d/duncan-large-bedroom-duncan-wild-rose/owrUUYHVs94VGHJJDKGgU5"
     },
     {
+      "address": "Youbou",
+      "size": "2 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/youbou-bed-bath-d-above-ground-duplex/d5jSTiQAzhm5g3AH9ocstR"
+    },
+    {
       "address": "2220 Sun Valley Drive",
       "size": "1 Bedroom",
       "price": "$1,450",
@@ -142,6 +149,27 @@
       "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/tLVgjyJskL75Qe6vBYkSDK"
     },
     {
+      "address": "gale avenue south near harbour way",
+      "size": "1 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/sechelt-peaceful-lower-suite-in-west/oXkakNVUvgfJZ4iLWn9mdV"
+    },
+    {
+      "address": "8396 SaSeenos Road",
+      "size": "2 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/central-island-42ft-beautiful-5th-wheel/jQkMs4vsW9A3LmmM1ns5CG"
+    },
+    {
+      "address": "550 Bradley St",
+      "size": "1 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-fully-furnished-bed-bath-one/6z8iavudanHukoaoqn43MY"
+    },
+    {
       "address": "Ladysmith",
       "size": "1 Bedroom",
       "price": "$1,500",
@@ -154,27 +182,6 @@
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/victoria-south-bachelor-suite-maple/bCg639jpHZPjEuvcwoeeDx"
-    },
-    {
-      "address": "Baden  Poweell near Esplanade",
-      "size": "1 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/ladysmith-basement-suite-for-rent/jk2ML1vTakwWk7veU7EVgq"
-    },
-    {
-      "address": "550 Bradley St",
-      "size": "1 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-fully-furnished-bed-bath-one/6z8iavudanHukoaoqn43MY"
-    },
-    {
-      "address": "8396 SaSeenos Road",
-      "size": "2 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/central-island-42ft-beautiful-5th-wheel/jQkMs4vsW9A3LmmM1ns5CG"
     }
   ],
   "error": "",
