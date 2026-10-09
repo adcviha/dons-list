@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-07T20:02:08.459734+00:00",
+  "last_updated": "2026-10-09T19:35:50.034001+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -30,6 +30,13 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-furnished-private-bedroom-close/kVe5STkrqzLfvNRy2ReWtD"
     },
     {
+      "address": "Sointula BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/north-island-room-oceanfront-room-with/t4nELdGxJ9JYRTLp3iXvhE"
+    },
+    {
       "address": "Nanaimo, BC",
       "size": "1 Bedroom",
       "price": "$1,200",
@@ -49,13 +56,6 @@
       "price": "$1,200",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/at6MfAGYee4k7zxZMCZ5md"
-    },
-    {
-      "address": "Sointula BC",
-      "size": "1 Bedroom",
-      "price": "$1,200",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/north-island-room-oceanfront-room-with/t4nELdGxJ9JYRTLp3iXvhE"
     },
     {
       "address": "3500 block 10th Ave.",
@@ -86,20 +86,6 @@
       "link": "https://www.craigslist.org/view/d/duncan-bedroom-suite-at-westwind-manor/44qfUpHxv11getanmMDefZ"
     },
     {
-      "address": "2265 Ashlee Road",
-      "size": "2 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-2265-ashlee-road-lower/pRsZAx1GWyYape4j98bNvM"
-    },
-    {
-      "address": "110 Esplanade Avenue",
-      "size": "0 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
-    },
-    {
       "address": "Parkview Dr",
       "size": "1 Bedroom",
       "price": "$1,400",
@@ -121,6 +107,13 @@
       "link": "https://www.craigslist.org/view/d/duncan-large-bedroom-duncan-wild-rose/owrUUYHVs94VGHJJDKGgU5"
     },
     {
+      "address": "Chemainus",
+      "size": "1 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/tLVgjyJskL75Qe6vBYkSDK"
+    },
+    {
       "address": "Youbou",
       "size": "2 Bedroom",
       "price": "$1,450",
@@ -128,25 +121,11 @@
       "link": "https://www.craigslist.org/view/d/youbou-bed-bath-d-above-ground-duplex/d5jSTiQAzhm5g3AH9ocstR"
     },
     {
-      "address": "2220 Sun Valley Drive",
-      "size": "1 Bedroom",
-      "price": "$1,450",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-2220-sun-valley-drive-lower/4Ru8dpWwDYuaqcwDukepVJ"
-    },
-    {
       "address": "Youbou, BC",
       "size": "2 Bedroom",
       "price": "$1,450",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/youbou-youbou-bed-bath-newly-renovated/kmEvwEGuV7Z7hqFEMqA3pU"
-    },
-    {
-      "address": "Chemainus",
-      "size": "1 Bedroom",
-      "price": "$1,450",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/tLVgjyJskL75Qe6vBYkSDK"
     },
     {
       "address": "gale avenue south near harbour way",
@@ -175,13 +154,6 @@
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-in-brand-new/v5JBSii7yva82bNZDXU27A"
-    },
-    {
-      "address": "Victoria",
-      "size": "0 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/victoria-south-bachelor-suite-maple/bCg639jpHZPjEuvcwoeeDx"
     }
   ],
   "error": "",
