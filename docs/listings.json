@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T22:15:35.030847+00:00",
+  "last_updated": "2026-10-14T18:41:30.764038+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -27,14 +27,14 @@
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
     },
     {
       "address": "Nanaimo, BC",
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
     },
     {
       "address": "Sointula BC",
@@ -128,18 +128,11 @@
       "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/tLVgjyJskL75Qe6vBYkSDK"
     },
     {
-      "address": "gulfview near sheridan ridge",
+      "address": "Ladysmith",
       "size": "1 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-bright-bedroom-ocean-view-legal/kYCrBhuKsRaiYNPzfymPge"
-    },
-    {
-      "address": "gale avenue south near harbour way",
-      "size": "1 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/sechelt-peaceful-lower-suite-in-west/oXkakNVUvgfJZ4iLWn9mdV"
+      "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-in-brand-new/v5JBSii7yva82bNZDXU27A"
     },
     {
       "address": "8396 SaSeenos Road",
@@ -149,11 +142,11 @@
       "link": "https://www.craigslist.org/view/d/central-island-42ft-beautiful-5th-wheel/jQkMs4vsW9A3LmmM1ns5CG"
     },
     {
-      "address": "Ladysmith",
+      "address": "gulfview near sheridan ridge",
       "size": "1 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-in-brand-new/v5JBSii7yva82bNZDXU27A"
+      "link": "https://www.craigslist.org/view/d/nanaimo-bright-bedroom-ocean-view-legal/kYCrBhuKsRaiYNPzfymPge"
     }
   ],
   "error": "",
