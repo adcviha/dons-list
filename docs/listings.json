@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19T19:58:22.708319+00:00",
+  "last_updated": "2026-10-21T18:44:13.378364+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -11,9 +11,9 @@
     {
       "address": "2520 Alexander St",
       "size": "2 Bedroom",
-      "price": "$750",
+      "price": "$700",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/mtiigUKrn5W3JQJK2zjCRY"
+      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/aiXdCFUdQXwXjB8etKzcKt"
     },
     {
       "address": "5 - 6901 Island Hwy W near Bowser Rd",
@@ -23,18 +23,25 @@
       "link": "https://www.craigslist.org/view/d/bowser-full-time-rv-site-in-bowser/rZe2VGQHXZLSYia7KGAnja"
     },
     {
-      "address": "Nanaimo, BC",
+      "address": "11th. Ave near China Creek",
       "size": "1 Bedroom",
-      "price": "$1,200",
+      "price": "$900",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
+      "link": "https://www.craigslist.org/view/d/port-alberni-tiny-cottage/spVfW9J5fWJxwhD5wVM3kf"
     },
     {
-      "address": "Nanaimo, BC",
+      "address": "1801 Hallen Avenue",
       "size": "1 Bedroom",
-      "price": "$1,200",
+      "price": "$975",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
+      "link": "https://www.craigslist.org/view/d/nanaimo-1801-hallen-avenue-lotus-house/4WLstcdB5oSHjoQA6itN3s"
+    },
+    {
+      "address": "schooner way near Brionna drive",
+      "size": "1 Bedroom",
+      "price": "$1,100",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-426-sq-ft-studio-suite-nanaimo/rb9aXcg5ThYbMxjiNvryQZ"
     },
     {
       "address": "Sointula BC",
@@ -49,6 +56,20 @@
       "price": "$1,200",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/at6MfAGYee4k7zxZMCZ5md"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
     },
     {
       "address": "Nanaimo",
@@ -91,13 +112,6 @@
       "price": "$1,400",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/chemainus-bedroom-suite-available/sreVxGH3kawBGJqDkjcz42"
-    },
-    {
-      "address": "2220 Sun Valley Drive",
-      "size": "1 Bedroom",
-      "price": "$1,450",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-2220-sun-valley-drive-lower/4Ru8dpWwDYuaqcwDukepVJ"
     },
     {
       "address": "Youbou",
