@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-21T18:44:13.378364+00:00",
+  "last_updated": "2026-10-23T18:26:44.541174+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -86,20 +86,6 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-450-irwin-street-orca/qTptKUifZSxwhMUg6Bfia7"
     },
     {
-      "address": "Plecas",
-      "size": "1 Bedroom",
-      "price": "$1,350",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-bedroom-lower-suite-south/1a3tczaVek9yGwGSsw9C4F"
-    },
-    {
-      "address": "2265 Ashlee Road",
-      "size": "2 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-2265-ashlee-road-lower/pRsZAx1GWyYape4j98bNvM"
-    },
-    {
       "address": "110 Esplanade Avenue",
       "size": "0 Bedroom",
       "price": "$1,400",
@@ -114,18 +100,18 @@
       "link": "https://www.craigslist.org/view/d/chemainus-bedroom-suite-available/sreVxGH3kawBGJqDkjcz42"
     },
     {
-      "address": "Youbou",
-      "size": "2 Bedroom",
-      "price": "$1,450",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/youbou-bed-bath-d-above-ground-duplex/d5jSTiQAzhm5g3AH9ocstR"
-    },
-    {
       "address": "Youbou, BC",
       "size": "2 Bedroom",
       "price": "$1,450",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/youbou-youbou-bed-bath-newly-renovated/kmEvwEGuV7Z7hqFEMqA3pU"
+    },
+    {
+      "address": "Youbou",
+      "size": "2 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/youbou-bed-bath-d-above-ground-duplex/d5jSTiQAzhm5g3AH9ocstR"
     },
     {
       "address": "Chemainus",
@@ -135,18 +121,18 @@
       "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/tLVgjyJskL75Qe6vBYkSDK"
     },
     {
-      "address": "Ladysmith",
-      "size": "1 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-in-brand-new/v5JBSii7yva82bNZDXU27A"
-    },
-    {
       "address": "8396 SaSeenos Road",
       "size": "2 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/central-island-42ft-beautiful-5th-wheel/jQkMs4vsW9A3LmmM1ns5CG"
+    },
+    {
+      "address": "Ladysmith",
+      "size": "1 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-in-brand-new/v5JBSii7yva82bNZDXU27A"
     },
     {
       "address": "gulfview near sheridan ridge",
