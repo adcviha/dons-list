@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-10-23T18:26:44.541174+00:00",
+  "last_updated": "2026-10-26T20:02:51.677523+00:00",
   "listings": [
     {
       "address": "Duncan",
       "size": "1 Bedroom",
       "price": "$695",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-weekly-rentals-695/tQzEehCuSq8iek2Ge4CFwn"
+      "link": "https://www.craigslist.org/view/d/duncan-weekly-rentals-695/kNTQJJND3wmqgouZnFXeZs"
     },
     {
       "address": "2520 Alexander St",
@@ -23,6 +23,13 @@
       "link": "https://www.craigslist.org/view/d/bowser-full-time-rv-site-in-bowser/rZe2VGQHXZLSYia7KGAnja"
     },
     {
+      "address": "Nanaimo, BC, V9S 1B4",
+      "size": "1 Bedroom",
+      "price": "$900",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-nanaimo-bedroom-bath/syBsc6cQr583e7SDz52UBu"
+    },
+    {
       "address": "11th. Ave near China Creek",
       "size": "1 Bedroom",
       "price": "$900",
@@ -37,11 +44,18 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-1801-hallen-avenue-lotus-house/4WLstcdB5oSHjoQA6itN3s"
     },
     {
-      "address": "schooner way near Brionna drive",
+      "address": "Nanaimo, BC",
       "size": "1 Bedroom",
-      "price": "$1,100",
+      "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-426-sq-ft-studio-suite-nanaimo/rb9aXcg5ThYbMxjiNvryQZ"
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/at6MfAGYee4k7zxZMCZ5md"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
     },
     {
       "address": "Sointula BC",
@@ -55,28 +69,7 @@
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/at6MfAGYee4k7zxZMCZ5md"
-    },
-    {
-      "address": "Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,200",
-      "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
-    },
-    {
-      "address": "Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,200",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
-    },
-    {
-      "address": "Nanaimo",
-      "size": "0 Bedroom",
-      "price": "$1,250",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-bachelor-suite-franklyn-st/uEW2wUXhPQAvFM9FFHTQ47"
     },
     {
       "address": "Nanaimo",
@@ -93,13 +86,6 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
     },
     {
-      "address": "3040 Pine Street",
-      "size": "1 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/chemainus-bedroom-suite-available/sreVxGH3kawBGJqDkjcz42"
-    },
-    {
       "address": "Youbou, BC",
       "size": "2 Bedroom",
       "price": "$1,450",
@@ -114,11 +100,11 @@
       "link": "https://www.craigslist.org/view/d/youbou-bed-bath-d-above-ground-duplex/d5jSTiQAzhm5g3AH9ocstR"
     },
     {
-      "address": "Chemainus",
+      "address": "Ladysmith",
       "size": "1 Bedroom",
-      "price": "$1,450",
+      "price": "$1,500",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/tLVgjyJskL75Qe6vBYkSDK"
+      "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-in-brand-new/v5JBSii7yva82bNZDXU27A"
     },
     {
       "address": "8396 SaSeenos Road",
@@ -126,13 +112,6 @@
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/central-island-42ft-beautiful-5th-wheel/jQkMs4vsW9A3LmmM1ns5CG"
-    },
-    {
-      "address": "Ladysmith",
-      "size": "1 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-in-brand-new/v5JBSii7yva82bNZDXU27A"
     },
     {
       "address": "gulfview near sheridan ridge",
