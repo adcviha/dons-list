@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-10-26T20:02:51.677523+00:00",
+  "last_updated": "2026-10-28T19:38:05.179447+00:00",
   "listings": [
     {
       "address": "Duncan",
       "size": "1 Bedroom",
-      "price": "$695",
+      "price": "$595",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-weekly-rentals-695/kNTQJJND3wmqgouZnFXeZs"
+      "link": "https://www.craigslist.org/view/d/duncan-weekly-rentals-595/urgdmAynivj89Y5tGyYoZW"
     },
     {
       "address": "2520 Alexander St",
       "size": "2 Bedroom",
-      "price": "$700",
+      "price": "$650",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/aiXdCFUdQXwXjB8etKzcKt"
+      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/cqPbB7w3qewxnB8FkRECQk"
     },
     {
       "address": "5 - 6901 Island Hwy W near Bowser Rd",
@@ -21,13 +21,6 @@
       "price": "$750",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/bowser-full-time-rv-site-in-bowser/rZe2VGQHXZLSYia7KGAnja"
-    },
-    {
-      "address": "Nanaimo, BC, V9S 1B4",
-      "size": "1 Bedroom",
-      "price": "$900",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-nanaimo-bedroom-bath/syBsc6cQr583e7SDz52UBu"
     },
     {
       "address": "11th. Ave near China Creek",
@@ -48,14 +41,21 @@
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/at6MfAGYee4k7zxZMCZ5md"
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
     },
     {
       "address": "Nanaimo, BC",
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/at6MfAGYee4k7zxZMCZ5md"
     },
     {
       "address": "Sointula BC",
@@ -65,11 +65,11 @@
       "link": "https://www.craigslist.org/view/d/north-island-room-oceanfront-room-with/t4nELdGxJ9JYRTLp3iXvhE"
     },
     {
-      "address": "Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,200",
+      "address": "Nanaimo",
+      "size": "0 Bedroom",
+      "price": "$1,250",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-bachelor-suite-franklyn-st/sPPKtMV3y1MRRJH4Bqj4EL"
     },
     {
       "address": "Nanaimo",
@@ -84,6 +84,27 @@
       "price": "$1,400",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
+    },
+    {
+      "address": "Nanaimo",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-bedroom-suite-in-central/x1jz6FHS9phB6AmymKHhgc"
+    },
+    {
+      "address": "3040 Pine Street",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/chemainus-bedroom-suite-available/9ptwWH2EVvPEBqe7MLNHv1"
+    },
+    {
+      "address": "Chemainus",
+      "size": "1 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/eyzFiUahQVEMhnnsDQUuPL"
     },
     {
       "address": "Youbou, BC",
