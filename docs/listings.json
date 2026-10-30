@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-28T19:38:05.179447+00:00",
+  "last_updated": "2026-10-30T19:19:18.472967+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -34,14 +34,7 @@
       "size": "1 Bedroom",
       "price": "$975",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-1801-hallen-avenue-lotus-house/4WLstcdB5oSHjoQA6itN3s"
-    },
-    {
-      "address": "Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,200",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
+      "link": "https://www.craigslist.org/view/d/nanaimo-1801-hallen-avenue-lotus-house/jTkLrMvbaQDbxVr7qcgbfT"
     },
     {
       "address": "Nanaimo, BC",
@@ -49,6 +42,13 @@
       "price": "$1,200",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/vuFEvCxzWVmRhKzDoqxeGm"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/bkoPHSLqR97odivXBF9eDq"
     },
     {
       "address": "Nanaimo, BC",
@@ -79,11 +79,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-450-irwin-street-orca/qTptKUifZSxwhMUg6Bfia7"
     },
     {
-      "address": "110 Esplanade Avenue",
+      "address": "Nanaimo",
       "size": "0 Bedroom",
-      "price": "$1,400",
+      "price": "$1,300",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-110-esplanade-avenue-203/vfhTVFjLcLoStZ6eJoLPan"
+      "link": "https://www.craigslist.org/view/d/nanaimo-studio-unit-at-dlx-on-third/1q55kBwLoWEDmgRpnGpvqj"
     },
     {
       "address": "Nanaimo",
@@ -91,13 +91,6 @@
       "price": "$1,400",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-south-bedroom-suite-in-central/x1jz6FHS9phB6AmymKHhgc"
-    },
-    {
-      "address": "3040 Pine Street",
-      "size": "1 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/chemainus-bedroom-suite-available/9ptwWH2EVvPEBqe7MLNHv1"
     },
     {
       "address": "Chemainus",
@@ -119,6 +112,13 @@
       "price": "$1,450",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/youbou-bed-bath-d-above-ground-duplex/d5jSTiQAzhm5g3AH9ocstR"
+    },
+    {
+      "address": "Nanaimo",
+      "size": "1 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-nanaimo-one-bedroom-units-on/5P1crjGxZt4dWujLFwFHdL"
     },
     {
       "address": "Ladysmith",
