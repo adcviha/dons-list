@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-02T22:53:52.318327+00:00",
+  "last_updated": "2026-11-04T20:56:03.741721+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -13,7 +13,7 @@
       "size": "2 Bedroom",
       "price": "$600",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/mtiigUKrn5W3JQJK2zjCRY"
+      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/cqPbB7w3qewxnB8FkRECQk"
     },
     {
       "address": "5 - 6901 Island Hwy W near Bowser Rd",
@@ -30,11 +30,18 @@
       "link": "https://www.craigslist.org/view/d/port-alberni-tiny-cottage/spVfW9J5fWJxwhD5wVM3kf"
     },
     {
+      "address": "643 Lambert Avenue",
+      "size": "1 Bedroom",
+      "price": "$975",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-643-lambert-avenue-jasper/171XHfx6MGLsfjCQUQansK"
+    },
+    {
       "address": "1801 Hallen Avenue",
       "size": "1 Bedroom",
       "price": "$975",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-1801-hallen-avenue-lotus-house/jTkLrMvbaQDbxVr7qcgbfT"
+      "link": "https://www.craigslist.org/view/d/nanaimo-1801-hallen-avenue-lotus-house/4WLstcdB5oSHjoQA6itN3s"
     },
     {
       "address": "2077 lakeside dr",
@@ -100,13 +107,6 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-studio-unit-at-dlx-on-third/1q55kBwLoWEDmgRpnGpvqj"
     },
     {
-      "address": "1055 St George Crescent Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,395",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedoom/q1QDoU6dSdTeceJ5d2cbmp"
-    },
-    {
       "address": "Nanaimo",
       "size": "1 Bedroom",
       "price": "$1,400",
@@ -114,18 +114,18 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-bedroom-suite-in-central/x1jz6FHS9phB6AmymKHhgc"
     },
     {
+      "address": "1608 Bowen Rd",
+      "size": "1 Bedroom",
+      "price": "$1,445",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-1bdr-unit-avail-december-1st/3qMNc7mAbzqPPjzTX5YXTr"
+    },
+    {
       "address": "Chemainus",
       "size": "1 Bedroom",
       "price": "$1,450",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/eyzFiUahQVEMhnnsDQUuPL"
-    },
-    {
-      "address": "Youbou, BC",
-      "size": "2 Bedroom",
-      "price": "$1,450",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/youbou-youbou-bed-bath-newly-renovated/kmEvwEGuV7Z7hqFEMqA3pU"
     },
     {
       "address": "Youbou",
@@ -140,13 +140,6 @@
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-in-brand-new/v5JBSii7yva82bNZDXU27A"
-    },
-    {
-      "address": "8396 SaSeenos Road",
-      "size": "2 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/central-island-42ft-beautiful-5th-wheel/jQkMs4vsW9A3LmmM1ns5CG"
     },
     {
       "address": "Nanaimo",
