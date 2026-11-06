@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-04T20:56:03.741721+00:00",
+  "last_updated": "2026-11-06T20:33:16.124985+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -13,7 +13,7 @@
       "size": "2 Bedroom",
       "price": "$600",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/cqPbB7w3qewxnB8FkRECQk"
+      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/mtiigUKrn5W3JQJK2zjCRY"
     },
     {
       "address": "5 - 6901 Island Hwy W near Bowser Rd",
@@ -21,6 +21,13 @@
       "price": "$750",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/bowser-full-time-rv-site-in-bowser/rZe2VGQHXZLSYia7KGAnja"
+    },
+    {
+      "address": "Wakesaih Ave near Bowen road",
+      "size": "1 Bedroom",
+      "price": "$850",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-room-for-rent-near-viu/b4mFcC8eU44UR3VdtscVwq"
     },
     {
       "address": "11th. Ave near China Creek",
@@ -44,6 +51,20 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-1801-hallen-avenue-lotus-house/4WLstcdB5oSHjoQA6itN3s"
     },
     {
+      "address": "Nanaimo South",
+      "size": "1 Bedroom",
+      "price": "$1,000",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-outstanding-1bed-1bath/wiSS1UDvydih3uwB7CBsQh"
+    },
+    {
+      "address": "2574 Lewis st",
+      "size": "1 Bedroom",
+      "price": "$1,050",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-duncan-new-renovated-small/u22VkyFbULoUmmsvGm4sAP"
+    },
+    {
       "address": "2077 lakeside dr",
       "size": "1 Bedroom",
       "price": "$1,120",
@@ -62,14 +83,7 @@
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-lovely-bright-bedroom/wHG6H7xEfKCNx8ACgkxKVa"
-    },
-    {
-      "address": "Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,200",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/3aFQekhte2XZuCpXUhGif8"
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/oxuYj1pSEW1ucfzf6tJ6aY"
     },
     {
       "address": "Sointula BC",
@@ -77,6 +91,13 @@
       "price": "$1,200",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/north-island-room-oceanfront-room-with/t4nELdGxJ9JYRTLp3iXvhE"
+    },
+    {
+      "address": "Nanaimo",
+      "size": "1 Bedroom",
+      "price": "$1,234",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-police-warn-about-rental-scam-ads/gaPEswQPn5tsPvZScuBezf"
     },
     {
       "address": "Nanaimo",
@@ -93,6 +114,13 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-450-irwin-street-orca/qTptKUifZSxwhMUg6Bfia7"
     },
     {
+      "address": "wavecrest near stephensons point road",
+      "size": "1 Bedroom",
+      "price": "$1,290",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-stephensons-point-studio/v2Ev6NRGKrKHsTiQoApGTj"
+    },
+    {
       "address": "strathmore",
       "size": "0 Bedroom",
       "price": "$1,300",
@@ -105,6 +133,20 @@
       "price": "$1,300",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-studio-unit-at-dlx-on-third/1q55kBwLoWEDmgRpnGpvqj"
+    },
+    {
+      "address": "South Nanaimo",
+      "size": "2 Bedroom",
+      "price": "$1,385",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-cozy-micro-bedroom-suite/g4jgKW4GzPS6cvTc5ieiHT"
+    },
+    {
+      "address": "Prideaux near Comox",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-large-one-bedroom-suite-with/4rdpM1GijdWwXLC1w2sXaD"
     },
     {
       "address": "Nanaimo",
@@ -133,6 +175,20 @@
       "price": "$1,450",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/youbou-bed-bath-d-above-ground-duplex/d5jSTiQAzhm5g3AH9ocstR"
+    },
+    {
+      "address": "901 Is Hwy S, Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,453",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-bedrm/hzK6ek6Xq3zqErtsu9a35g"
+    },
+    {
+      "address": "2556 Dingwall st",
+      "size": "2 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-updated-two-bedroom-apartment-on/bFRsjRPST3CJHUuuVpACp1"
     },
     {
       "address": "Ladysmith",
