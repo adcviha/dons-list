@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09T23:33:39.410565+00:00",
+  "last_updated": "2026-11-11T21:24:12.655878+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -13,7 +13,7 @@
       "size": "2 Bedroom",
       "price": "$600",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/vnggxSZRqzQtHA6hLSr3nf"
+      "link": "https://www.craigslist.org/view/d/duncan-fully-furnished-condos-available/mtiigUKrn5W3JQJK2zjCRY"
     },
     {
       "address": "Wakesaih Ave near Bowen road",
@@ -65,11 +65,11 @@
       "link": "https://www.craigslist.org/view/d/cedar-bedroom-first-floor-studio/ez8MqUr5K6sBRQ7rk4NT3i"
     },
     {
-      "address": "3500 block 10th Ave.",
+      "address": "Nanaimo, BC",
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/port-alberni-updated-one-bedroom-duplex/e88CyEtDrZpQTTjoBkutyU"
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/oxuYj1pSEW1ucfzf6tJ6aY"
     },
     {
       "address": "Nanaimo, BC",
@@ -79,11 +79,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/iFDvQDu96t4aFu4N5RcnM6"
     },
     {
-      "address": "Nanaimo, BC",
+      "address": "3500 block 10th Ave.",
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/oxuYj1pSEW1ucfzf6tJ6aY"
+      "link": "https://www.craigslist.org/view/d/port-alberni-updated-one-bedroom-duplex/e88CyEtDrZpQTTjoBkutyU"
     },
     {
       "address": "Sointula BC",
@@ -105,6 +105,13 @@
       "price": "$1,250",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-south-bachelor-suite-franklyn-st/sPPKtMV3y1MRRJH4Bqj4EL"
+    },
+    {
+      "address": "Prideaux near Comox",
+      "size": "1 Bedroom",
+      "price": "$1,272",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-large-one-bedroom-suite-with/4rdpM1GijdWwXLC1w2sXaD"
     },
     {
       "address": "Nanaimo",
@@ -142,18 +149,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-cozy-bedroom-suite-in/g4jgKW4GzPS6cvTc5ieiHT"
     },
     {
-      "address": "gulfview dr near tiky way",
+      "address": "1406 Jingle Pot Rd, Nanaimo, BC",
       "size": "1 Bedroom",
       "price": "$1,400",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-br-sqft-quiet-private-suite-in/kgQMv9LqxPj6roQDbEeVYu"
-    },
-    {
-      "address": "Prideaux near Comox",
-      "size": "1 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-large-one-bedroom-suite-with/4rdpM1GijdWwXLC1w2sXaD"
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-spacious-one-bedroom/21aK9ESEYposZK7xtai7y3"
     },
     {
       "address": "Nanaimo",
@@ -161,6 +161,13 @@
       "price": "$1,400",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-south-bedroom-suite-in-central/x1jz6FHS9phB6AmymKHhgc"
+    },
+    {
+      "address": "gulfview dr near tiky way",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-br-sqft-quiet-private-suite-in/kgQMv9LqxPj6roQDbEeVYu"
     },
     {
       "address": "Chemainus",
@@ -177,18 +184,18 @@
       "link": "https://www.craigslist.org/view/d/youbou-bed-bath-d-above-ground-duplex/d5jSTiQAzhm5g3AH9ocstR"
     },
     {
-      "address": "2556 Dingwall st",
-      "size": "2 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-updated-two-bedroom-apartment-on/bFRsjRPST3CJHUuuVpACp1"
-    },
-    {
       "address": "Ladysmith",
       "size": "1 Bedroom",
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-in-brand-new/v5JBSii7yva82bNZDXU27A"
+    },
+    {
+      "address": "2556 Dingwall st",
+      "size": "2 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/duncan-updated-two-bedroom-apartment-on/bFRsjRPST3CJHUuuVpACp1"
     },
     {
       "address": "Nanaimo",
