@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-11T21:24:12.655878+00:00",
+  "last_updated": "2026-11-13T21:02:13.396398+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -51,11 +51,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-outstanding-1bed-1bath/wiSS1UDvydih3uwB7CBsQh"
     },
     {
-      "address": "2574 Lewis st",
+      "address": "515 Harewood Rd Nanaimo, BC",
       "size": "1 Bedroom",
-      "price": "$1,050",
+      "price": "$1,100",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/duncan-duncan-new-renovated-small/u22VkyFbULoUmmsvGm4sAP"
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-1bedrm/nRTKBLQse4DsanuCseBxFb"
     },
     {
       "address": "2077 lakeside dr",
@@ -100,13 +100,6 @@
       "link": "https://www.craigslist.org/view/d/duncan-police-warn-about-rental-scam-ads/gaPEswQPn5tsPvZScuBezf"
     },
     {
-      "address": "Nanaimo",
-      "size": "0 Bedroom",
-      "price": "$1,250",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-bachelor-suite-franklyn-st/sPPKtMV3y1MRRJH4Bqj4EL"
-    },
-    {
       "address": "Prideaux near Comox",
       "size": "1 Bedroom",
       "price": "$1,272",
@@ -149,13 +142,6 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-cozy-bedroom-suite-in/g4jgKW4GzPS6cvTc5ieiHT"
     },
     {
-      "address": "1406 Jingle Pot Rd, Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-spacious-one-bedroom/21aK9ESEYposZK7xtai7y3"
-    },
-    {
       "address": "Nanaimo",
       "size": "1 Bedroom",
       "price": "$1,400",
@@ -170,18 +156,18 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-br-sqft-quiet-private-suite-in/kgQMv9LqxPj6roQDbEeVYu"
     },
     {
-      "address": "Chemainus",
-      "size": "1 Bedroom",
-      "price": "$1,450",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/central-island-bedroom-suite-ashley/eyzFiUahQVEMhnnsDQUuPL"
-    },
-    {
       "address": "Youbou",
       "size": "2 Bedroom",
       "price": "$1,450",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/youbou-bed-bath-d-above-ground-duplex/d5jSTiQAzhm5g3AH9ocstR"
+      "link": "https://www.craigslist.org/view/d/youbou-bed-bath-d-newly-renovated/xsHVc8SFKgpEBiyds38p4H"
+    },
+    {
+      "address": "194 Beachside Dr Parksville, BC",
+      "size": "1 Bedroom",
+      "price": "$1,453",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/parksville-1bed/hogqvY1kYydcvzop4eQ2hF"
     },
     {
       "address": "Ladysmith",
@@ -189,6 +175,13 @@
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-in-brand-new/v5JBSii7yva82bNZDXU27A"
+    },
+    {
+      "address": "Ladysmith",
+      "size": "2 Bedroom",
+      "price": "$1,500",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-seaview-manor/iMkXYd2Ki5PjD96KwW1RCL"
     },
     {
       "address": "2556 Dingwall st",
