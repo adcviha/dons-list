@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16T23:29:39.489497+00:00",
+  "last_updated": "2026-11-18T21:59:07.266332+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -41,7 +41,7 @@
       "size": "1 Bedroom",
       "price": "$975",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-1801-hallen-avenue-lotus-house/jTkLrMvbaQDbxVr7qcgbfT"
+      "link": "https://www.craigslist.org/view/d/nanaimo-1801-hallen-avenue-lotus-house/4WLstcdB5oSHjoQA6itN3s"
     },
     {
       "address": "285 Kennedy Street",
@@ -83,7 +83,14 @@
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/oxuYj1pSEW1ucfzf6tJ6aY"
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-spacious-one-bedroom-home/t3DoWHKj5HGXou4r1N3gSf"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-bright-one-bedroom-home/h6FSVxsy5iJReYQHVBPA3L"
     },
     {
       "address": "Nanaimo, BC",
@@ -91,6 +98,13 @@
       "price": "$1,200",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/iFDvQDu96t4aFu4N5RcnM6"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/oxuYj1pSEW1ucfzf6tJ6aY"
     },
     {
       "address": "3500 block 10th Ave.",
@@ -128,18 +142,18 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-stephensons-point-studio/mJiKfTQkrnw32FM7zzmodZ"
     },
     {
-      "address": "Nanaimo",
-      "size": "0 Bedroom",
-      "price": "$1,300",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-studio-unit-at-dlx-on-third/1q55kBwLoWEDmgRpnGpvqj"
-    },
-    {
       "address": "South Nanaimo",
       "size": "2 Bedroom",
       "price": "$1,385",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-south-cozy-bedroom-suite-in/g4jgKW4GzPS6cvTc5ieiHT"
+    },
+    {
+      "address": "620 Pine St",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-pet-friendly-bed-bath-with/vxqigWzWSeoB3RDQqStGWg"
     },
     {
       "address": "Nanaimo",
@@ -182,13 +196,6 @@
       "price": "$1,500",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/ladysmith-bedroom-suite-seaview-manor/iMkXYd2Ki5PjD96KwW1RCL"
-    },
-    {
-      "address": "Nanaimo",
-      "size": "1 Bedroom",
-      "price": "$1,500",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-nanaimo-one-bedroom-units-on/5P1crjGxZt4dWujLFwFHdL"
     }
   ],
   "error": "",
