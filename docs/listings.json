@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18T21:59:07.266332+00:00",
+  "last_updated": "2026-11-20T21:56:33.373159+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -41,7 +41,7 @@
       "size": "1 Bedroom",
       "price": "$975",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-1801-hallen-avenue-lotus-house/4WLstcdB5oSHjoQA6itN3s"
+      "link": "https://www.craigslist.org/view/d/nanaimo-1801-hallen-avenue-lotus-house/jTkLrMvbaQDbxVr7qcgbfT"
     },
     {
       "address": "285 Kennedy Street",
@@ -58,16 +58,9 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-outstanding-1bed-1bath/wiSS1UDvydih3uwB7CBsQh"
     },
     {
-      "address": "515 Harewood Rd Nanaimo, BC",
-      "size": "1 Bedroom",
-      "price": "$1,100",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-1bedrm/nRTKBLQse4DsanuCseBxFb"
-    },
-    {
       "address": "5788 Bradbury Rd",
       "size": "1 Bedroom",
-      "price": "$1,140",
+      "price": "$1,100",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-master-bedroom-ocean-view/kZn3hFgu4hptgnDjxShwxA"
     },
@@ -83,21 +76,21 @@
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-spacious-one-bedroom-home/t3DoWHKj5HGXou4r1N3gSf"
+      "link": "https://www.craigslist.org/view/d/nanaimo-bedroom-character-home/xsyGFRyQR6DBDCXEZ4XqKq"
     },
     {
       "address": "Nanaimo, BC",
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-bright-one-bedroom-home/h6FSVxsy5iJReYQHVBPA3L"
+      "link": "https://www.craigslist.org/view/d/nanaimo-cozy-bright-bedroom/8cDqLDKsRHYHCpqVgEQV8L"
     },
     {
       "address": "Nanaimo, BC",
       "size": "1 Bedroom",
       "price": "$1,200",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/iFDvQDu96t4aFu4N5RcnM6"
+      "link": "https://www.craigslist.org/view/d/nanaimo-bright-and-clean-bedroom-home/3Yk4XmnEtcx5JsWD3FwxAb"
     },
     {
       "address": "Nanaimo, BC",
@@ -105,6 +98,13 @@
       "price": "$1,200",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-central-bedroom-home-available/oxuYj1pSEW1ucfzf6tJ6aY"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-central-spacious-bedroom-home/iFDvQDu96t4aFu4N5RcnM6"
     },
     {
       "address": "3500 block 10th Ave.",
@@ -149,13 +149,6 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-cozy-bedroom-suite-in/g4jgKW4GzPS6cvTc5ieiHT"
     },
     {
-      "address": "620 Pine St",
-      "size": "1 Bedroom",
-      "price": "$1,400",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-pet-friendly-bed-bath-with/vxqigWzWSeoB3RDQqStGWg"
-    },
-    {
       "address": "Nanaimo",
       "size": "1 Bedroom",
       "price": "$1,400",
@@ -163,11 +156,25 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-bedroom-suite-in-central/x1jz6FHS9phB6AmymKHhgc"
     },
     {
+      "address": "620 Pine St",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-pet-friendly-bed-bath-with/vxqigWzWSeoB3RDQqStGWg"
+    },
+    {
       "address": "gulfview dr near tiky way",
       "size": "1 Bedroom",
       "price": "$1,400",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-br-sqft-quiet-private-suite-in/kgQMv9LqxPj6roQDbEeVYu"
+    },
+    {
+      "address": "180 Memorial Ave, Parksville, BC",
+      "size": "2 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/parksville-downtown-parksville-bedroom/omszcYCbai3YLLmhNoH1RN"
     },
     {
       "address": "Youbou",
