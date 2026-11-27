@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-25T23:09:46.277009+00:00",
+  "last_updated": "2026-11-27T22:45:18.051113+00:00",
   "listings": [
     {
       "address": "Duncan",
@@ -51,18 +51,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-1801-hallen-avenue-lotus-house/jTkLrMvbaQDbxVr7qcgbfT"
     },
     {
-      "address": "Nanaimo South",
-      "size": "1 Bedroom",
-      "price": "$1,000",
+      "address": "Nanaimo",
+      "size": "0 Bedroom",
+      "price": "$985",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-outstanding-1bed-1bath/wiSS1UDvydih3uwB7CBsQh"
-    },
-    {
-      "address": "5788 Bradbury Rd",
-      "size": "1 Bedroom",
-      "price": "$1,100",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-master-bedroom-ocean-view/kZn3hFgu4hptgnDjxShwxA"
+      "link": "https://www.craigslist.org/view/d/nanaimo-kennedy-street-studio/byzVi5rjr8bvJRHvV1UXa2"
     },
     {
       "address": "North Nanaimo",
@@ -77,6 +70,27 @@
       "price": "$1,150",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/sechelt-one-bedroom-suite-for-rent/9F5sNXuNaHmJXXTFyouDpC"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-north-bedroom-character-home/fp3HiqzBnVHk6LztjThDYw"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-north-bright-bedroom-home/9vtj8jcfy1eHwCWBdeY86X"
+    },
+    {
+      "address": "Nanaimo, BC",
+      "size": "1 Bedroom",
+      "price": "$1,200",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-north-very-spacious-bedroom-home/exMtFdSmqp57qGPRGcvjqK"
     },
     {
       "address": "3500 block 10th Ave.",
@@ -121,11 +135,11 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-south-cozy-bedroom-suite-in/g4jgKW4GzPS6cvTc5ieiHT"
     },
     {
-      "address": "Nanaimo",
+      "address": "4111 Crosland Pl, Duncan, BC",
       "size": "1 Bedroom",
-      "price": "$1,400",
+      "price": "$1,398",
       "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-south-bedroom-suite-in-central/x1jz6FHS9phB6AmymKHhgc"
+      "link": "https://www.craigslist.org/view/d/duncan-well-maintained-bed/cMpUpPgM5sjT4TiZJYayWc"
     },
     {
       "address": "620 Pine St",
@@ -133,6 +147,13 @@
       "price": "$1,400",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/nanaimo-pet-friendly-bed-bath-with/vxqigWzWSeoB3RDQqStGWg"
+    },
+    {
+      "address": "Nanaimo",
+      "size": "1 Bedroom",
+      "price": "$1,400",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-south-bedroom-suite-in-central/x1jz6FHS9phB6AmymKHhgc"
     },
     {
       "address": "gulfview dr near tiky way",
@@ -149,18 +170,18 @@
       "link": "https://www.craigslist.org/view/d/nanaimo-901-island-highway-south-16/tYbnmhUT9L6R6LtwRxw7Gg"
     },
     {
-      "address": "Nanaimo",
-      "size": "1 Bedroom",
-      "price": "$1,450",
-      "contact": "Reply via Craigslist",
-      "link": "https://www.craigslist.org/view/d/nanaimo-3442b-littleford-rd/61xwfjNb5C8dAPCsE1gm5H"
-    },
-    {
       "address": "Youbou",
       "size": "2 Bedroom",
       "price": "$1,450",
       "contact": "Reply via Craigslist",
       "link": "https://www.craigslist.org/view/d/youbou-bed-bath-d-newly-renovated/xsHVc8SFKgpEBiyds38p4H"
+    },
+    {
+      "address": "Nanaimo",
+      "size": "1 Bedroom",
+      "price": "$1,450",
+      "contact": "Reply via Craigslist",
+      "link": "https://www.craigslist.org/view/d/nanaimo-3442b-littleford-rd/61xwfjNb5C8dAPCsE1gm5H"
     },
     {
       "address": "Ladysmith",
